@@ -1,0 +1,684 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"len",
+				"length"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ssids",
+				"ssidNames"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"black",
+				"blackListDlg"
+			],
+			[
+				"RA",
+				"RandomNumBoth"
+			],
+			[
+				"get",
+				"getOption"
+			],
+			[
+				"char",
+				"chartType"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"set",
+				"setScatterChart1"
+			],
+			[
+				"hide",
+				"hideLoading"
+			],
+			[
+				"myT",
+				"mytable"
+			],
+			[
+				"cl",
+				"clearInterval〔function〕"
+			],
+			[
+				"my",
+				"myChart1"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"cloud",
+				"cloudMode"
+			],
+			[
+				"max",
+				"maxConSwitch"
+			],
+			[
+				"clou",
+				"cloudAddressContent"
+			],
+			[
+				"wifi",
+				"wifisetting.html"
+			],
+			[
+				"dev",
+				"devModeSel"
+			],
+			[
+				"rem",
+				"remove〔function〕"
+			],
+			[
+				"remv",
+				"removeClass〔function〕"
+			],
+			[
+				"label",
+				"label-success"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"vl",
+				"vlan.html"
+			],
+			[
+				"Pro",
+				"ProfilePage"
+			],
+			[
+				"pag",
+				"pages/"
+			],
+			[
+				"ti",
+				"Ticket.js"
+			],
+			[
+				"t",
+				"Ticket"
+			],
+			[
+				"prop",
+				"props\tReact: this.props."
+			],
+			[
+				"r",
+				"rcc\tReact: component skeleton"
+			],
+			[
+				"pro",
+				"props\tReact: this.props."
+			],
+			[
+				"im",
+				"img\tTag"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"reac",
+				"react"
+			],
+			[
+				"rr",
+				"react-router-dom"
+			],
+			[
+				"cw",
+				"cwr\tReact: componentWillReceiveProps: fn(np) { ... }"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"p",
+				"PropTypes"
+			],
+			[
+				"po",
+				"prop-types"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"run",
+				"npm: Run Script"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:in",
+				"Package Control: Install Package"
+			],
+			[
+				"npm run",
+				"npm: Run Script"
+			],
+			[
+				"package contol:in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"npm in",
+				"npm: Install and Save Development Package"
+			],
+			[
+				"npm run ",
+				"npm: Run Script"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 266.0,
+		"history":
+		[
+			"ggg",
+			"clear",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"aaa"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Project/web/mall",
+		"/D/Project/web/mall/assets",
+		"/D/Project/web/mall/html"
+	],
+	"file_history":
+	[
+		"/D/Project/web/frameMini2/html_mini/scanWifi.html",
+		"/D/Project/web/frameMini2/html_mini/vlan.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/components_bootstrap_multiselect_dropdown.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/components-bootstrap-multiselect.js",
+		"/D/Project/web/frameMini2/html_mini/quickConfig.html",
+		"/D/Project/web/frameMini2/html_mini/wifisetting.html",
+		"/C/Users/zjj/Desktop/roma.js",
+		"/C/Users/zjj/Desktop/macarons.js",
+		"/C/Users/zjj/Desktop/infographic.js",
+		"/D/Project/web/frameMini2/html_mini/index.html",
+		"/C/Users/zjj/Desktop/shine.js",
+		"/D/Project/web/frameMini2/assets/global/plugins/iconfont/iconfont.css",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/layouts/global/scripts/quick-nav.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/index.html",
+		"/D/Project/web/frameMini2/html_mini/systemInfo.html",
+		"/D/Project/web/tanzhen/assets/pages/scripts/components-bootstrap-switch.min.js",
+		"/D/Project/web/tanzhen/assets/pages/scripts/components-bootstrap-select.min.js",
+		"/D/Project/web/myapp/views/index.ejs",
+		"/D/Project/web/frameMini2/html_mini/login.html",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/D/Project/web/frameMini2/server.js",
+		"/D/Project/web/frameMini2/html_mini/networksetting.html",
+		"/D/Project/web/frameMini2/html_mini/systemReboot.html",
+		"/D/Project/web/frameMini2/html_mini/systemUpdate.html",
+		"/D/Project/web/frameMini2/html_mini/updating.html",
+		"/D/Project/web/frameMini2/html_mini/wifisetting - 副本.html",
+		"/D/Project/web/frameMini2/html_mini/bootstrap_table_test.html",
+		"/D/Project/web/frameMini2/html_mini/checkSys.html",
+		"/D/Project/web/frameMini2/html_mini/index - 副本.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/ui-blockui.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/ui-alerts-api.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.css",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/ui-sweetalert.js",
+		"/C/Users/zjj/Desktop/font_ni8bg4f1b9nhr529/iconfont.css",
+		"/D/Project/web/frameMini2/frameMini2.sublime-project",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/index - 副本.html",
+		"/D/Project/web/bootstrap-table-examples/methods/togglePagination.html",
+		"/D/Project/web/bootstrap-table-examples/extensions/cookie.html",
+		"/D/Project/web/bootstrap-table-examples/methods/template.js",
+		"/D/Project/web/bootstrap-table-examples/methods/showRow-hideRow.html",
+		"/D/Project/web/bootstrap-table-examples/methods/template.html",
+		"/D/Project/web/bootstrap-table-examples/methods/showLoading-hideLoading.html",
+		"/D/Project/web/bootstrap-table-examples/methods/selectPage-prevPage-nextPage.html",
+		"/D/Project/web/bootstrap-table-examples/methods/showColumn-hideCoulumn.html",
+		"/D/Project/web/bootstrap-table-examples/methods/scrollTo.html",
+		"/D/Project/web/bootstrap-table-examples/methods/resetSearch.html",
+		"/D/Project/web/bootstrap-table-examples/methods/removeByUniqueId.html",
+		"/D/Project/web/bootstrap-table-examples/methods/removeAll.html",
+		"/D/Project/web/bootstrap-table-examples/methods/remove.html",
+		"/D/Project/web/bootstrap-table-examples/methods/refreshOptions.html",
+		"/D/Project/web/bootstrap-table-examples/methods/refresh.html",
+		"/D/Project/web/bootstrap-table-examples/methods/prepend.html",
+		"/D/Project/web/bootstrap-table-examples/methods/mergeCells.html",
+		"/D/Project/web/bootstrap-table-examples/methods/load.html",
+		"/D/Project/web/bootstrap-table-examples/methods/insertRow.html",
+		"/D/Project/web/bootstrap-table-examples/methods/getSelections.html",
+		"/D/Project/web/bootstrap-table-examples/methods/getRowByUniqueId.html",
+		"/D/Project/web/bootstrap-table-examples/methods/getOptions.html",
+		"/C/Users/zjj/Desktop/-1503971086550.log",
+		"/D/Project/web/bootstrap-table-examples/methods/getData.html",
+		"/D/Project/web/bootstrap-table-examples/methods/getAllSelections.html",
+		"/D/Project/web/bootstrap-table-examples/methods/filterBy.html",
+		"/D/Project/web/bootstrap-table-examples/methods/expandRow-collapseRow.html",
+		"/D/Project/web/bootstrap-table-examples/methods/destroy.html",
+		"/D/Project/web/bootstrap-table-examples/methods/check-uncheck.html",
+		"/D/Project/web/bootstrap-table-examples/methods/checkBy-uncheckBy.html",
+		"/D/Project/web/bootstrap-table-examples/methods/checkAll-uncheckAll.html",
+		"/D/Project/web/bootstrap-table-examples/methods/append.html",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/D/Project/web/frameMini2/html_mini/.eslintrc.js",
+		"/D/Project/web/frameMini2/html_mini/vlan2.html",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/D/Project/web/bootstrap-table-examples/welcome.html",
+		"/D/360云盘/资料文档/01_多倍通工作资料/05_产品需求文档/04_胖AP本地管理后台V5.6/frameMini2/html_mini/wifiPorbe.html",
+		"/D/Project/react/reactNative/myapp/pages/Index.js",
+		"/D/Project/web/bootstrap-table-examples/app.js",
+		"/D/Project/web/bootstrap-table-examples/package.json",
+		"/D/Project/react/reactNative/myapp/node_modules/react-native-vector-icons/fonts.gradle",
+		"/D/Project/react/reactNative/myapp/android/app/build.gradle",
+		"/D/Project/react/reactNative/myapp/App.js",
+		"/D/Project/react/reactNative/myapp/pages/Profile.js",
+		"/D/Project/react/reactNative/myapp/package.json",
+		"/D/Project/react/reactNative/myapp/pages/Ticket.js",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/Project/react/reactNative/appTest/package.json",
+		"/D/Project/react/reactNative/myapp/index.android.js",
+		"/D/Project/react/reactNative/appTest/App.js",
+		"/D/Project/react/reactNative/myavd.bat",
+		"/D/Project/react/reactNative/appTest/app.json",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/ConvertToUTF8/Default (Windows).sublime-keymap",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/ConvertToUTF8/ConvertToUTF8.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/D/Project/react/reactNative/appTest/Samples/ActivityIndicatorSample.js",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/D/Project/react/reactNative/appTest/.eslintrc.js",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/PyV8/win64-p3/config.json",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/D/ProgramFiles/nodejs/node_modules/npm/npmrc",
+		"/D/Project/react/reactNative/appTest/测试.txt",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/ConvertToUTF8.sublime-settings",
+		"/C/Users/zjj/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/D/Project/react/reactNative/rcN.sublime-project",
+		"/D/React/reactNative/appTest/package.json",
+		"/D/React/reactNative/myapp/node_modules/react-native/ReactAndroid/build.gradle",
+		"/D/Program Files/nodejs/node_modules/npm/npmrc",
+		"/D/androidStudio/projects/MyApplication/build.gradle",
+		"/D/androidStudio/projects/MyApplication/gradle/wrapper/gradle-wrapper.properties",
+		"/D/androidStudio/projects/MyApplication/gradle.properties",
+		"/D/androidStudio/projects/test/gradle/wrapper/gradle-wrapper.properties",
+		"/D/React/reactJs/src/ParamsExample.js",
+		"/D/React/reactJs/package.json",
+		"/D/React/reactJs/webpack.config.js",
+		"/D/React/reactJs/src/BasicExample.js",
+		"/D/React/reactJs/public/components/About.js",
+		"/D/React/reactJs/public/components/Topics.js",
+		"/D/React/reactJs/src/App.js",
+		"/D/React/reactJs/public/App.js",
+		"/D/React/reactJs/public/index.html",
+		"/D/React/reactJs/src/App2.js",
+		"/C/Users/zjj/Desktop/oui.txt"
+	],
+	"find":
+	{
+		"height": 53.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"D:\\Project\\web\\frameMini2\\html_mini",
+			"D:\\Project\\web\\frameMini2",
+			"D:\\Project\\web\\frameMini2\\html_mini",
+			"D:\\Project\\react\\reactNative\\myapp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mytable",
+			"addBlackList",
+			"operateEvents",
+			"editBlackList",
+			"operateEvents",
+			"editBlackList",
+			"operateEvents",
+			"editBlackList",
+			"saveBlackList",
+			"sweetalert",
+			"swal",
+			"blackListDlg",
+			"saveBlackList",
+			"handle",
+			"ssidnames",
+			"e.",
+			"ssidnames",
+			"multiselect",
+			"ssidNames",
+			"Fixed Height Dropdown",
+			"data-label",
+			"ssidNames",
+			"Fixed Height Dropdown",
+			"data-label",
+			"ssidNames",
+			"clickable_groups",
+			"clickable-groups",
+			"ssidNames",
+			"btn_class",
+			"ssidNames",
+			"ssid黑名单",
+			"devBlackList",
+			"AP模式",
+			"blackListDlg",
+			"dlgTitle",
+			"blackListDlg",
+			"黑名单",
+			"operateEvents",
+			"tableBlackList",
+			"toolbarBlackList",
+			"tab_2",
+			"新增SSID",
+			"RandomNumBoth",
+			"toolbar",
+			"tableTab0",
+			"tab_1",
+			"tab_0",
+			"setScatterChart1",
+			"手动扫描",
+			"c12e34",
+			"有线",
+			"axisLabel",
+			"switch",
+			"信号强度",
+			"yAxis",
+			"change",
+			"停止",
+			"options",
+			"change",
+			"data",
+			"dat",
+			"data",
+			"free.png",
+			"setChart1",
+			"自动扫描",
+			"autoSearch",
+			"state",
+			"switchCtl",
+			"maxConSwitch",
+			"cookie",
+			"scanWifi",
+			"工具",
+			"vlan.html",
+			"getUrlParam",
+			"window.location",
+			"工具",
+			"保存",
+			"nav",
+			"navTabs",
+			"tab_0",
+			"liTab_0",
+			"tab_0",
+			"apModeContent",
+			"透明桥",
+			"apmode",
+			"cookie",
+			"apMode",
+			"modeExplain",
+			"apMode",
+			"AP模式",
+			"routerMode",
+			"modeSelectAll",
+			"已连接终端",
+			"navTabs",
+			"2.4G",
+			"最优距离",
+			"最优",
+			"vlan",
+			"switchCtl",
+			"cutstr",
+			"datatable",
+			"cookie",
+			"trahs",
+			"switchCtl",
+			"operateEvents",
+			"a:first",
+			"tab",
+			"max",
+			"maxConSwitch",
+			"外网设置",
+			"网络设置",
+			"cloudAddressGroup",
+			"已连接",
+			"新增SSID",
+			"devModeSel",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader",
+			"badge badge-default",
+			"iconHeader"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"vlan.html",
+			"取消"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mall.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
