@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>管理平台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../assets/global/plugins/iconfont/iconfont.css" type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+    <link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" type="text/css" rel="stylesheet">
+    <link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" type="text/css" rel="stylesheet">
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-fixed">
+    <div class="page-wrapper">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="javascript:;">
+                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" width="87" height="14" /> </a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">  </span>
+                        </a>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-quick-sidebar-toggler">
+                            <a href="javascript:;" class="dropdown-toggle">
+                                <i class="icon-logout"></i>
+                            </a>
+                        </li>
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"></div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        <!-- END SIDEBAR TOGGLER BUTTON -->
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                        <li class="nav-item start active">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-shebei" style="font-size: 20px;"></i>
+                                <span class="title">设备管理</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start open">
+                                    <a href="index.html" class="nav-link ">
+                                    <i class="iconfont icon-route" style="font-size: 20px;"></i>
+                                    <span class="title">AP管理</span>
+                                    <span class="selected"></span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tanzhen.html" class="nav-link ">
+                                    <i class="iconfont icon-tanzhen" style="font-size: 20px;"></i>
+                                    <span class="title">探针管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="authServer.html" class="nav-link ">
+                                    <i class="iconfont icon-fuwuqi" style="font-size: 20px;"></i>
+                                    <span class="title">认证服务器管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="group.html" class="nav-link ">
+                                    <i class="iconfont icon-fenzu" style="font-size: 20px;"></i>
+                                    <span class="title">分组管理</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-yonghuguanli2" style="font-size: 20px"></i>
+                                <span class="title">用户管理</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="apUser.html" class="nav-link ">
+                                    <i class="iconfont icon-yonghuguanli1" style="font-size: 20px;"></i>
+                                    <span class="title">AP用户</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tanzhenUser.html" class="nav-link ">
+                                    <i class="iconfont icon-yonghuguanli" style="font-size: 20px;"></i>
+                                    <span class="title">探针用户</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-xitong" style="font-size: 20px"></i>
+                                <span class="title">系统管理</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="version.html" class="nav-link ">
+                                    <i class="iconfont icon-icon_shengji" style="font-size: 20px;"></i>
+                                    <span class="title">固件管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="log.html" class="nav-link ">
+                                    <i class="iconfont icon-icon1" style="font-size: 20px;"></i>
+                                    <span class="title">日志管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="client.html" class="nav-link ">
+                                    <i class="iconfont icon-dailishang" style="font-size: 20px;"></i>
+                                    <span class="title">客户管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="menu.html" class="nav-link ">
+                                    <i class="iconfont icon-caidan" style="font-size: 20px;"></i>
+                                    <span class="title">菜单管理</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--                         <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-diamond"></i>
+                                <span class="title">用户管理</span>
+                            </a>
+                        </li> -->
+                        <!--                         <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-diamond"></i>
+                            <span class="title">基础信息管理</span>
+                            <span class="arrow"></span>
+                        </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start">
+                                    <a href="group.html" class="nav-link ">
+                                    <i class="icon-bar-chart"></i>
+                                    <span class="title">分组管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="javascript:;" class="nav-link ">
+                                    <i class="icon-settings"></i>
+                                    <span class="title">日志管理</span>
+                                </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="javascript:;" class="nav-link ">
+                                    <i class="icon-settings"></i>
+                                    <span class="title">代理商管理</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEADER-->
+                    <!-- BEGIN PAGE BAR -->
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <!--<a href="javascript:;">管理首页</a>-->
+                                <span>设备管理</span>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <span>AP管理</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- BEGIN PAGE TITLE-->
+                    <h1 class="page-title">AP管理
+                        <small></small>
+                    </h1>
+                    <!-- END PAGE TITLE-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tabbable-line boxless tabbable-reversed">
+                                <ul class="nav nav-tabs" id="mytab">
+                                    <li class="active"><a href="#tab1" data-toggle="tab">AP列表</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">配置文件</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab1">
+                                        <!-- BEGIN DASHBOARD STATS 1-->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a class="dashboard-stat dashboard-stat-v2 green" href="#" id="devTotals">
+                                                    <div class="visual">
+                                                        <i class="fa fa-comments"></i>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="number">
+                                                            <span data-counter="counterup" data-value="200">200</span>
+                                                        </div>
+                                                        <div class="desc">设备总数</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="devConnected">
+                                                <a class="dashboard-stat dashboard-stat-v2 blue" href="#" name="networkset" id="interSet">
+                                                    <div class="visual">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="number">
+                                                            <span data-counter="counterup" data-value="150">150</span>
+                                                        </div>
+                                                        <div class="desc">在线设备数</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a class="dashboard-stat dashboard-stat-v2 red" href="#" id="devUnConnected">
+                                                    <div class="visual">
+                                                        <i class="fa fa-bar-chart-o"></i>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="number">
+                                                            <span data-counter="counterup" data-value="50">50</span>
+                                                        </div>
+                                                        <div class="desc">离线设备数</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <!-- END DASHBOARD STATS 1-->
+                                        <!-- BEGIN TABLE STATIC BASIC-->
+                                        <!-- END TABLE STATIC BASIC-->
+                                        <div class="row" id="connectDev">
+                                            <div class="col-md-12 col-sm-12">
+                                                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                                                <div class="portlet light portlet-fit portlet-datatable bordered">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+                                                            <span class="caption-subject font-blue sbold uppercase">AP列表</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <form class="form-inline" role="form" style="margin-bottom: 15px;">
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="devMacSearch">mac</label>
+                                                                <input type="text" class="form-control" id="devMacSearch" placeholder="设备MAC">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="devNameSearch">devNameSearch</label>
+                                                                <input type="text" class="form-control" id="devNameSearch" placeholder="设备名称">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="userNameSearch">userName</label>
+                                                                <input type="text" class="form-control" id="userNameSearch" placeholder="代理商/客户">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="devGroupSearch">devGroup</label>
+                                                                <input type="text" class="form-control" id="devGroupSearch" placeholder="设备分组">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="ssidNameSearch">ssidName</label>
+                                                                <input type="text" class="form-control" id="ssidNameSearch" placeholder="SSID名称">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="versionSearch">version</label>
+                                                                <input type="text" class="form-control" id="versionSearch" placeholder="固件版本">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="versionSearch">version</label>
+                                                                <input type="text" class="form-control" id="versionSearch" placeholder="设备类型">
+                                                            </div>
+                                                        </form>
+                                                        <form class="form-inline" role="form">
+                                                            <div class="form-group">
+                                                                <label for="dateTimeSel">注册日期：</label>
+                                                                <div id="dateTimeSel" class="btn default">
+                                                                    <i class="fa fa-calendar"></i> &nbsp;
+                                                                    <span> </span>
+                                                                    <b class="fa fa-angle-down"></b>
+                                                                </div>
+                                                            </div>
+                                                            <a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            <i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        </a>
+                                                            <a href="javascript:;" class="btn btn-circle red" id="searchReset">
+                                            <i class="fa fa-refresh" style="margin-right: 5px;"></i>复位 
+                                        </a>
+                                                        </form>
+                                                        <div class="btn-group" id="toolbar">
+                                                            <a class="btn btn-circle blue" href="javascript:;" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="iconfont icon-gongneng"></i> 设备管理
+                                                                <i class="fa fa-angle-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a href="javascript:;" id="setDevsParam">
+                                                <i class="iconfont icon-xiafapeizhi2" style="font-size: 14px"></i> 下发配置 </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" id="rebootBtn">
+                                                <i class="iconfont icon-ziyuan" style="font-size: 14px"></i> 远程重启 </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:;" id="updateBtn">
+                                                <i class="iconfont icon-icon_shengji" style="font-size: 14px"></i> 固件升级 </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <table id="mytable"></table>
+                                                    </div>
+                                                </div>
+                                                <!-- END EXAMPLE TABLE PORTLET-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab2">
+                                        <div class="clearfix"></div>
+                                        <div class="row" id="connectDev">
+                                            <div class="col-md-12 col-sm-12">
+                                                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                                                <div class="portlet light portlet-fit portlet-datatable bordered">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+                                                            <span class="caption-subject font-blue sbold uppercase">配置文件列表</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="btn-group" id="toolbar2">
+                                                            <a class="btn btn-circle blue" href="javascript:;" data-toggle="dropdown" aria-expanded="false" id="addSetting">
+                                            <i class="fa fa-plus"></i> 新增配置文件
+                                        </a>
+                                                        </div>
+                                                        <table id="mytable2"></table>
+                                                    </div>
+                                                </div>
+                                                <!-- END EXAMPLE TABLE PORTLET-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+            <a href="javascript:;" class="page-quick-sidebar-toggler">
+            <i class="icon-login"></i>
+        </a>
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+    </div>
+    <!-- modal-dialog Begin -->
+    <div class="modal fade in" id="devName" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">设备名称</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="devNameInput" class="col-md-12 form-control" value="init">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" class="btn green" data-dismiss="modal">保存
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="userName" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">代理商/客户</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal form-row-seperated">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">代理商</label>
+                                        <select class="selectpicker col-md-6">
+                                            <option>安徽</option>
+                                            <option>西安</option>
+                                            <option>福建</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">客户</label>
+                                        <select class="selectpicker col-md-6">
+                                            <option>黄山</option>
+                                            <option>大学</option>
+                                            <option>欢乐谷</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" class="btn green" data-dismiss="modal">保存
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="group" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">设备分组</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal form-row-seperated">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">分组</label>
+                                        <select class="selectpicker col-md-6">
+                                            <option>分组1</option>
+                                            <option>分组2</option>
+                                            <option>分组3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" class="btn green" data-dismiss="modal">保存
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="setDevsParamDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">下发配置</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal form-row-seperated">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">配置文件</label>
+                                        <select class="selectpicker col-md-6">
+                                            <option>配置文件1</option>
+                                            <option>配置文件2</option>
+                                            <option>配置文件3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" class="btn green" data-dismiss="modal" id="setDevParamOk">下发
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="rebootDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">远程重启</h4>
+                </div>
+                <div class="modal-body">
+                    确认要远程重启已选中的设备吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" id="rebootDev" class="btn green" data-dismiss="modal" id="setDevParamOk">立即重启
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="updateDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">固件升级</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal form-row-seperated">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">选择升级固件</label>
+                                        <select class="selectpicker col-md-6">
+                                            <option>固件1</option>
+                                            <option>固件2</option>
+                                            <option>固件3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" class="btn green" data-dismiss="modal" id="updateOk">升级固件
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade in" id="delDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">删除配置文件</h4>
+                </div>
+                <div class="modal-body">
+                    确认要删除配置文件吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+                    </button>
+                    <button type="button" id="saveSetting" class="btn green" data-dismiss="modal" id="setDevParamOk">确认删除
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-dialog End -->
+    <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+    <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+    <script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.js"></script>
+    <script src="../assets/global/plugins/bootstrap-table-master/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../assets/global/plugins/tableExport-jquery-plugin/tableExport.min.js"></script>
+    <script src="../assets/global/plugins/tableExport-jquery-plugin/FileSaver.min.js"></script>
+    <script src="../assets/global/plugins/tableExport-jquery-plugin/xlsx.core.min.js"></script>
+    <script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table-export.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        // 初始化日期选择控件
+        $('#dateTimeSel').daterangepicker({
+                opens: (App.isRTL() ? 'left' : 'right'),
+                // startDate: moment().subtract('days', 29),
+                // endDate: moment(),
+                startDate: '全部',
+                endDate: '全部',
+                //minDate: '01/01/2012',
+                //maxDate: '12/31/2014',
+                // dateLimit: { // days: 30 // },
+                showDropdowns: true,
+                showWeekNumbers: true,
+                timePicker: false,
+                timePickerIncrement: 1,
+                timePicker12Hour: true,
+                ranges: {
+                    '全部': ['all'],
+                    '今天': [moment(), moment()],
+                    '昨天': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                    '最近7天': [moment().subtract('days', 6), moment()],
+                    '最近30天': [moment().subtract('days', 29), moment()],
+                    '本月': [moment().startOf('month'), moment().endOf('month')],
+                    '上月': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                },
+                buttonClasses: ['btn'],
+                applyClass: 'green',
+                cancelClass: 'default',
+                format: 'MM/DD/YYYY',
+                separator: ' to ',
+                locale: {
+                    applyLabel: '保存',
+                    cancelLabel: '取消',
+                    fromLabel: 'From',
+                    toLabel: 'To',
+                    customRangeLabel: '自定义',
+                    daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                    monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                    firstDay: 1
+                }
+            },
+            function(start, end) {
+                if (start._i == 'all') {
+                    $('#dateTimeSel span').html('全部');
+                } else {
+                    var startStr = start.format('YYYY/MMMM/D');
+                    var endStr = end.format('YYYY/MMMM/D');
+                    startStr = toChinese(startStr);
+                    endStr = toChinese(endStr);
+                    $('#dateTimeSel span').html(startStr + ' - ' + endStr);
+                    // console.log(start.format('MMMM D, YYYY') + end.format('MMMM D, YYYY'));
+                }
+            }
+        );
+        //Set the initial state of the picker label
+        $('#dateTimeSel span').html('全部');
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        // 初始化表格
+        $('#mytable').bootstrapTable({
+            // search: true, // 显示搜索框
+            // sortName: 'mac', // 初始化排序字段
+            // url: 'https://weiquaninfo.cn/json/data.json',   
+            pagination: true, // 底部显示数量,
+            pageNumber: 1, //初始化加载第一页，默认第一页
+            pageSize: 5, //每页的记录行数
+            pageList: [5, 10, 25, 50, 100], //可供选择的每页的行数
+            striped: true,
+            toolbar: '#toolbar',
+            showExport: true, // 导出（第三方）
+            exportDataType: 'all', // 导出参数
+            exportTypes: ['excel'], // 导出文件类型
+            exportOptions: { // 导出选项
+                excelFileFormat: 'xlsx'
+            },
+            showColumns: true, // 显示列选择按钮
+            // clickToSelect: true,
+            columns: [{
+                field: 'state', // 必须要有，否则获取行会多出一个数据
+                align: 'center',
+                valign: 'middle',
+                checkbox: true,
+            }, { // 表头
+                field: 'mac', // 域名
+                title: '设备MAC', //文字名称
+                align: 'center', // 水平居中
+                valign: 'middle', // 垂直居中
+                sortable: true, //启用排序
+                width: '150px',
+                visible: true,
+            }, {
+                field: 'name',
+                title: '设备名称',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    // 限定12个字符以内
+                    var result = "";
+                    if (getLength(value) > 12) {
+                        result = '<div title=' + value + '>' + '<a class="editName">' + cutstr(value, 12) + '</a></div>';
+                    } else {
+                        result = '<a class="editName">' + value + '</a>';
+                    }
+                    return result;
+                },
+                events: 'devNameEvents',
+            }, {
+                field: 'user',
+                title: '代理商/客户',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    // 限定16个字符以内
+                    var result = "";
+                    if (getLength(value) > 16) {
+                        result = '<div title=' + value + '>' + '<a class="editUser">' + cutstr(value, 16) + '</a></div>';
+                    } else {
+                        result = '<a class="editUser">' + value + '</a>';
+                    }
+                    return result;
+                },
+                events: 'userEvents',
+            }, {
+                field: 'group',
+                title: '设备分组',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    // 限定12个字符以内
+                    var result = "";
+                    if (getLength(value) > 12) {
+                        result = '<div title=' + value + '>' + '<a class="editGroup">' + cutstr(value, 12) + '</a></div>';
+                    } else {
+                        result = '<a class="editGroup">' + value + '</a>';
+                    }
+                    return result;
+                },
+                events: 'groupEvents',
+            }, {
+                field: 'netStatus',
+                title: '在线状态',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    var result = "";
+                    if (value == 'On') {
+                        result = '<span class="label label-sm label-success">' + '在线' + '</span>';
+                    } else {
+                        result = '<span class="label label-sm label-danger">' + '离线' + '</span>';
+                    }
+                    return result;
+                },
+            }, {
+                field: 'lastUpTime',
+                title: '末次在线时间',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+            }, {
+                field: 'sysUpTime',
+                title: '运行时长',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+            }, {
+                field: 'localIP',
+                title: '内网IP',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+            }, {
+                field: 'netIP',
+                title: '公网IP/端口',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+            }, {
+                field: 'ssid',
+                title: 'SSID名称',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    // 限定12个字符以内
+                    var result = "";
+                    if (getLength(value) > 12) {
+                        result = '<div title=' + value + '>' + cutstr(value, 12) + '</div>';
+                    } else {
+                        result = value;
+                    }
+                    return result;
+                },
+            }, {
+                field: 'channel',
+                title: '运行信道',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+                formatter: function(value, row, index) {
+                    var ch1 = value.split("/")[0];
+                    var ch2 = value.split("/")[1];
+                    var strCh1 = '<span class="label label-sm label-info">' + '2.4G' + '</span>' + '&nbsp;' + ch1 + '<br/>';
+                    var strCh2 = '<span class="label label-sm label-success">' + '5.8G' + '</span>' + '&nbsp;' + ch2 + '<br/>';
+                    return (strCh1 + strCh2);
+                },
+            }, {
+                field: 'runMode',
+                title: '运行模式',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+            }, {
+                field: 'connectDev',
+                title: '连接终端数',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+                formatter: function(value, row, index) {
+                    var ch1 = value.split("/")[0];
+                    var ch2 = value.split("/")[1];
+                    var strCh1 = '<span class="label label-sm label-info">' + '2.4G' + '</span>' + '&nbsp;' + ch1 + '<br/>';
+                    var strCh2 = '<span class="label label-sm label-success">' + '5.8G' + '</span>' + '&nbsp;' + ch2 + '<br/>';
+                    return (strCh1 + strCh2);
+                },
+            }, {
+                field: 'gpsDev',
+                title: '设备定位',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: false,
+                formatter: function(value, row, index) {
+                    var result = "";
+                    if (value == '已定位') {
+                        result = '<a class="goPos"><span class="label label-sm label-success">' + '已定位' + '</span></a>';
+                    } else {
+                        result = '<a class="goPos"><span class="label label-sm label-danger">' + '未定位' + '</span></a>';
+                    }
+                    return result;
+                },
+                events: 'gpsEvents',
+            }, {
+                field: 'devType',
+                title: '设备类型',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+            }, {
+                field: 'version',
+                title: '固件版本',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+            }, {
+                field: 'regTime',
+                title: '注册时间',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    return '<div title="2017-08-31 16:34:45">' + value + '</div>';
+                },
+            }, {
+                field: 'updateTime',
+                title: '末次修改时间',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    return '<div title="2017-08-31 16:34:45">' + value + '</div>';
+                },
+            }, {
+                field: 'operate',
+                title: '操作',
+                align: 'center',
+                valign: 'middle',
+                sortable: false,
+                width: '250px',
+                formatter: function(value, row, index) {
+                    var info = '<a class="setting btn blue btn-circle btn-outline" style="margin-right: 5px" href="javascript:void(0)" >' + '<i class="iconfont icon-peizhi" style="margin-right: 5px;"></i>' + '配置' + '</a>';
+                    var refresh = '<a class="refresh btn green btn-circle btn-outline"  style="margin-right: 5px" href="javascript:void(0)" >' + '<i class="fa  fa-refresh" style="margin-right: 5px"></i>' + '刷新' + '</a>';
+                    var update = '<a class="update btn purple btn-circle btn-outline"  style="margin-right: 5px" href="javascript:void(0)" >' + '<i class="fa  fa-arrow-up" style="margin-right: 5px"></i>' + '升级' + '</a>';
+                    return (info + refresh + update);
+                },
+                events: 'operateEvents'
+            }],
+        });
+
+        //新增表格数据
+        var data = [{
+            mac: 'ed:54:1r:bb:t1:45',
+            name: '五号食堂一楼',
+            user: '-',
+            group: '-',
+            netStatus: 'On',
+            lastUpTime: '2017-08-31 16:34:25',
+            sysUpTime: '16天5小时45分钟',
+            localIP: '192.168.100.12',
+            netIP: '202.102.111.57:8081',
+            ssid: 'DB88',
+            channel: '15/23',
+            connectDev: '0/0',
+            gpsDev: '未定位',
+            version: '20170904-V1.0.3',
+            regTime: '2017-08-30',
+            updateTime: '2017-08-30',
+            runMode: '路由',
+            devType: 'DB6000',
+        }, {
+            mac: 'ef:54:1r:bb:t1:23',
+            name: '五号食堂一楼',
+            user: '安徽实业/黄山',
+            group: '分组1',
+            netStatus: 'On',
+            lastUpTime: '2017-08-31 16:34:25',
+            sysUpTime: '16天5小时45分钟',
+            localIP: '192.168.100.12',
+            netIP: '202.102.111.57:8081',
+            ssid: 'DB24/DB123/DB234',
+            channel: '15/23',
+            connectDev: '22/12',
+            gpsDev: '已定位',
+            version: '20170904-V1.0.3',
+            regTime: '2017-08-30',
+            updateTime: '2017-09-04',
+            runMode: 'AP',
+            devType: 'DB6000W-2',
+        }, {
+            mac: '0f:8y:bt:mn:t0:54',
+            name: '3号写字楼18楼楼道口',
+            user: '济南代理商/乐购',
+            group: '分组2',
+            netStatus: 'Off',
+            lastUpTime: '2017-08-31 16:34:25',
+            sysUpTime: '16天5小时45分钟',
+            localIP: '192.168.100.12',
+            netIP: '202.102.111.57:8081',
+            ssid: 'DB24/DB123',
+            channel: '15/23',
+            connectDev: '22/12',
+            gpsDev: '未定位',
+            version: '20170904-V1.0.3',
+            regTime: '2017-08-30',
+            updateTime: '2017-09-04',
+            runMode: '路由',
+            devType: 'DB6000W-3',
+        }];
+        for (var i = 0; i < 20; i++) {
+            data.push({
+                mac: '11:22:33:44:55:6' + i,
+                name: '测试1测试2测试3测试4',
+                user: '测试代理商/测试景区',
+                group: '设备分组测试123',
+                netStatus: 'On',
+                lastUpTime: '2017-08-31 16:34:25',
+                sysUpTime: '16天5小时45分钟',
+                localIP: '192.168.100.12',
+                netIP: '202.102.111.57:8081',
+                ssid: 'DB24',
+                channel: '15/23',
+                connectDev: '22/12',
+                gpsDev: '已定位',
+                version: '20170904-V1.0.3',
+                regTime: '2017-08-30',
+                updateTime: '2017-09-04',
+                runMode: 'AP',
+                devType: 'DB6000W-2',
+            })
+        }
+        $('#mytable').bootstrapTable('append', data);
+
+        // checkbox居中设置
+        $(".bs-checkbox").css({ 'vertical-align': 'middle' });
+        $('#mytable').on('column-switch.bs.table', function() {
+            $(".bs-checkbox").css({ 'vertical-align': 'middle' });
+        });
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 下发配置对话框
+        $("#setDevsParam").click(function(event) {
+            event.preventDefault();
+            var rows = $('#mytable').bootstrapTable('getSelections');
+            if (rows.length == 0) {
+                swal({
+                    title: "下发配置失败",
+                    text: "请先选择需要下发的设备",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "确认",
+                    showCancelButton: false,
+                    closeOnConfirm: true
+                })
+            } else {
+                $("#setDevsParamDlg").modal();
+            }
+        })
+        $("#setDevParamOk").click(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            App.blockUI({
+                target: $("#setDevsParamDlg"),
+                boxed: true,
+                message: '配置下发中...',
+                zIndex: 20000,
+            });
+            window.setTimeout(function() {
+                $("#setDevsParamDlg").modal('hide');
+                App.unblockUI('#setDevsParamDlg');
+                App.alert({
+                    place: 'append', // append or prepent in container 
+                    type: 'success', // alert's type
+                    message: '已下发配置', // alert's message
+                    close: true, // make alert closable
+                    reset: true, // close all previouse alerts first
+                    focus: true, // auto scroll to the alert after shown
+                    closeInSeconds: '5', // auto close after defined seconds
+                });
+            }, 3000);
+        })
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 批量重启
+        $("#rebootBtn").click(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var rows = $('#mytable').bootstrapTable('getSelections');
+            if (rows.length == 0) {
+                swal({
+                    title: "远程重启失败",
+                    text: "请先选择重启的设备",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "确认",
+                    showCancelButton: false,
+                    closeOnConfirm: true
+                })
+            } else {
+                $("#rebootDlg").modal();
+            }
+        })
+        $("#rebootDev").click(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            App.blockUI({
+                target: $("#rebootDlg"),
+                boxed: true,
+                message: '远程重启指令发送中...',
+                zIndex: 20000,
+            });
+            window.setTimeout(function() {
+                $("#rebootDlg").modal('hide');
+                App.unblockUI('#rebootDlg');
+                App.alert({
+                    place: 'append', // append or prepent in container 
+                    type: 'success', // alert's type
+                    message: '已下发远程重启指令', // alert's message
+                    close: true, // make alert closable
+                    reset: true, // close all previouse alerts first
+                    focus: true, // auto scroll to the alert after shown
+                    closeInSeconds: '5', // auto close after defined seconds
+                });
+            }, 3000);
+        })
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 升级固件
+        $("#updateBtn").click(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var rows = $('#mytable').bootstrapTable('getSelections');
+            if (rows.length == 0) {
+                swal({
+                    title: "固件升级失败",
+                    text: "请先选择需要升级的设备",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "确认",
+                    showCancelButton: false,
+                    closeOnConfirm: true
+                })
+            } else if (hasDiffDevType(rows)) {
+                swal({
+                    title: "固件升级失败",
+                    text: "请选择相同类型的设备",
+                    type: "warning",
+                    showConfirmButton: true,
+                    confirmButtonClass: "btn-warning",
+                    confirmButtonText: "确认",
+                    showCancelButton: false,
+                    closeOnConfirm: true
+                })
+            } else {
+                $("#updateDlg").modal();
+            }
+        });
+        $("#updateOk").click(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            App.blockUI({
+                target: $("#updateDlg"),
+                boxed: true,
+                message: '固件升级指令发送中...',
+                zIndex: 20000,
+            });
+            window.setTimeout(function() {
+                $("#updateDlg").modal('hide');
+                App.unblockUI('#updateDlg');
+                App.alert({
+                    place: 'append', // append or prepent in container 
+                    type: 'success', // alert's type
+                    message: '已下发固件升级指令', // alert's message
+                    close: true, // make alert closable
+                    reset: true, // close all previouse alerts first
+                    focus: true, // auto scroll to the alert after shown
+                    closeInSeconds: '5', // auto close after defined seconds
+                });
+            }, 3000);
+        })
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 查询条件
+        $("#searchBegin").click(function(event) {
+            event.preventDefault();
+            if (($("#devMacSearch").val() + $("#devNameSearch").val() + $("#userNameSearch").val() + $("#devGroupSearch").val() + $("#ipaddressSearch").val() + $("#ssidNameSearch").val() + $("#versionSearch").val()).length == 0) {
+                swal({
+                    title: "查询",
+                    text: "请先输入查询条件",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "确认",
+                    showCancelButton: false,
+                    closeOnConfirm: true
+                })
+            } else {
+                var condition = {};
+                if ($("#devMacSearch").val()) {
+                    condition.mac = $("#devMacSearch").val();
+                }
+                if ($("#devNameSearch").val()) {
+                    condition.name = $("#devNameSearch").val();
+                }
+                if ($("#userNameSearch").val()) {
+                    condition.user = $("#userNameSearch").val();
+                }
+                if ($("#devGroupSearch").val()) {
+                    condition.group = $("#devGroupSearch").val();
+                }
+                if ($("#ssidNameSearch").val()) {
+                    condition.ssid = $("#ssidNameSearch").val();
+                }
+                if ($("#versionSearch").val()) {
+                    condition.version = $("#versionSearch").val();
+                }
+                $('#mytable').bootstrapTable('filterBy', condition);
+            }
+        });
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 复位查询条件/全部设备
+        $("#searchReset, #devTotals").click(function(event) {
+            event.preventDefault();
+            $("#devMacSearch").val("");
+            $("#devNameSearch").val("");
+            $("#userNameSearch").val("");
+            $("#devGroupSearch").val("");
+            $("#ssidNameSearch").val("");
+            $("#versionSearch").val("");
+            $('#mytable').bootstrapTable('filterBy');
+        })
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        // 在线设备/离线设备
+        $("#devConnected").click(function(event) {
+            event.preventDefault();
+            $("#devMacSearch").val("");
+            $("#devNameSearch").val("");
+            $("#userNameSearch").val("");
+            $("#devGroupSearch").val("");
+            $("#ssidNameSearch").val("");
+            $("#versionSearch").val("");
+            $('#mytable').bootstrapTable('filterBy', { netStatus: 'On' });
+        })
+        $("#devUnConnected").click(function(event) {
+            event.preventDefault();
+            $("#devMacSearch").val("");
+            $("#devNameSearch").val("");
+            $("#userNameSearch").val("");
+            $("#devGroupSearch").val("");
+            $("#ssidNameSearch").val("");
+            $("#versionSearch").val("");
+            $('#mytable').bootstrapTable('filterBy', { netStatus: 'Off' });
+        })
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        // 配置文件表格
+        $('#mytable2').bootstrapTable({
+            search: true, // 显示搜索框
+            pagination: true, // 底部显示数量,
+            pageNumber: 1, //初始化加载第一页，默认第一页
+            pageSize: 5, //每页的记录行数
+            pageList: [5, 10, 25, 50, 100], //可供选择的每页的行数
+            striped: true,
+            toolbar: '#toolbar2',
+            columns: [{ // 表头
+                field: 'setName', // 域名
+                title: '配置文件名称', //文字名称
+                align: 'center', // 水平居中
+                valign: 'middle', // 垂直居中
+                sortable: true, //启用排序
+                visible: true,
+            }, {
+                field: 'remarks',
+                title: '备注',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    // 限定12个字符以内
+                    var result = "";
+                    if (getLength(value) > 12) {
+                        result = '<div title=' + value + '>' + '<a class="editName">' + cutstr(value, 12) + '</a></div>';
+                    } else {
+                        result = '<a class="editName">' + value + '</a>';
+                    }
+                    return result;
+                },
+                events: 'devNameEvents',
+            }, {
+                field: 'regTime',
+                title: '创建时间',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    return '<div title="2017-08-31 16:34:45">' + value + '</div>';
+                },
+            }, {
+                field: 'updateTime',
+                title: '末次修改时间',
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                visible: true,
+                formatter: function(value, row, index) {
+                    return '<div title="2017-08-31 16:34:45">' + value + '</div>';
+                },
+            }, {
+                field: 'operate',
+                title: '操作',
+                align: 'center',
+                valign: 'middle',
+                sortable: false,
+                formatter: function(value, row, index) {
+                    var edit = '<a class="edit btn blue btn-circle btn-outline" style="margin-right: 10px" href="javascript:void(0)" >' + '<i class="fa  fa-pencil"></i>' + '修改' + '</a>';
+                    var del = '<a class="delete btn red btn-circle btn-outline" href="javascript:void(0)" >' + '<i class="fa  fa-trash-o"></i>' + '删除' + '</a>';
+                    return (edit + del);
+                },
+                events: 'operateEvents'
+            }],
+        });
+        //新增表格数据
+        var data2 = [{
+            setName: 'SSID修改',
+            remarks: '五号食堂一楼',
+            regTime: '2017-08-30',
+            updateTime: '2017-08-30'
+        }, {
+            setName: 'SSID隐藏',
+            remarks: '五号食堂一楼',
+            regTime: '2017-08-30',
+            updateTime: '2017-09-04'
+        }, {
+            setName: '5.8G配置',
+            remarks: '3号写字楼18楼楼道口',
+            regTime: '2017-08-30',
+            updateTime: '2017-09-04'
+        }];
+        $('#mytable2').bootstrapTable('append', data2);
+        $("#addSetting").click(function(event) {
+            event.preventDefault();
+            window.location.href = "./peizhi.html";
+        })
+    })
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 设备定位点击
+    window.gpsEvents = {
+        'click .goPos': function(e, value, row, index) {
+            e.preventDefault();
+            window.location.href = "./gps.html";
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 设备名称修改
+    window.devNameEvents = {
+        'click .editName': function(e, value, row, index) {
+            e.preventDefault();
+            $("#devNameInput").val(value);
+            $("#devName").modal();
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 代理商修改
+    window.userEvents = {
+        'click .editUser': function(e, value, row, index) {
+            e.preventDefault();
+            $("#userName").modal();
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 分组修改
+    window.groupEvents = {
+        'click .editGroup': function(e, value, row, index) {
+            e.preventDefault();
+            $("#group").modal();
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 单台设备配置
+    window.operateEvents = {
+        'click .setting': function(e, value, row, index) {
+            e.preventDefault();
+            App.blockUI({
+                // target: $("#connectDev"),
+                boxed: true,
+                message: '获取当前配置中...',
+            });
+            window.setTimeout(function() {
+                App.unblockUI();
+                window.location.href = "./setting.html";
+            }, 3000);
+
+        },
+        'click .edit': function(e, value, row, index) {
+            e.preventDefault();
+            window.location.href = "./peizhi.html";
+        },
+        'click .delete': function(e, value, row, index) {
+            // alert("删除第" + (index + 1) + "行");
+            var ssids = [];
+            ssids.push(row.ssid);
+            $("#delDlg").modal();
+        },
+        'click .refresh': function(e, value, row, index) {
+            e.preventDefault();
+            App.blockUI({
+                // target: $("#connectDev"),
+                boxed: true,
+                message: '刷新中...',
+            });
+            window.setTimeout(function() {
+                App.unblockUI();
+                App.alert({
+                    place: 'append', // append or prepent in container 
+                    type: 'success', // alert's type
+                    message: '刷新成功', // alert's message
+                    close: true, // make alert closable
+                    reset: true, // close all previouse alerts first
+                    focus: true, // auto scroll to the alert after shown
+                    closeInSeconds: '5', // auto close after defined seconds
+                });
+            }, 3000);
+        },
+        'click .update': function(e, value, row, index) {
+            $("#updateDlg").modal();
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 
+    function getLength(str) {
+        return str.replace(/[\u0391-\uFFE5]/g, "aa").length;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 
+    function cutstr(str, len) {
+        var str_length = 0;
+        var str_len = 0;
+        var str_cut = new String();
+        str_len = str.length;
+        for (var i = 0; i < str_len; i++) {
+            var a = str.charAt(i);
+            str_length++;
+            if (escape(a).length > 4) {
+                //中文字符的长度经编码之后大于4  
+                str_length++;
+            }
+            str_cut = str_cut.concat(a);
+            if (str_length >= len) {
+                str_cut = str_cut.concat("...");
+                return str_cut;
+            }
+        }
+        //如果给定字符串小于指定长度，则返回源字符串；  
+        if (str_length < len) {
+            return str;
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // 
+    function toChinese(str) {
+        if (str.indexOf("January") >= 0) {
+            str = str.replace("January", "1")
+        } else if (str.indexOf("February") >= 0) {
+            str = str.replace("February", "2")
+        } else if (str.indexOf("March") >= 0) {
+            str = str.replace("March", "3")
+        } else if (str.indexOf("April") >= 0) {
+            str = str.replace("April", "4")
+        } else if (str.indexOf("May") >= 0) {
+            str = str.replace("May", "5")
+        } else if (str.indexOf("June") >= 0) {
+            str = str.replace("June", "6")
+        } else if (str.indexOf("July") >= 0) {
+            str = str.replace("July", "7")
+        } else if (str.indexOf("August") >= 0) {
+            str = str.replace("August", "8")
+        } else if (str.indexOf("September") >= 0) {
+            str = str.replace("September", "9")
+        } else if (str.indexOf("October") >= 0) {
+            str = str.replace("October", "10")
+        } else if (str.indexOf("November") >= 0) {
+            str = str.replace("November", "11")
+        } else if (str.indexOf("December") >= 0) {
+            str = str.replace("December", "12")
+        }
+        return str;
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    // 分组修改
+    function hasDiffDevType(rows) {
+        for (var i = 1; i < rows.length; i++) {
+            if (rows[i].devType != rows[i - 1].devType) {
+                return true;
+            }
+        }
+        return false;
+    }
+    </script>
+</body>
+
+</html>
