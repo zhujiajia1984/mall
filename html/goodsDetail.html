@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hi游</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="../assets/global/plugins/iconfont/iconfont.css" type="text/css">
+	<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+	<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+	<link href="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+	<style>
+	.form-wizard .steps>li.done>a.step .number {
+		background-color: #26C281!important;
+	}
+	</style>
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-fixed">
+	<div class="page-wrapper">
+		<!-- BEGIN HEADER -->
+		<div class="page-header navbar navbar-fixed-top">
+			<!-- BEGIN HEADER INNER -->
+			<div class="page-header-inner ">
+				<!-- BEGIN LOGO -->
+				<div class="page-logo">
+					<a href="javascript:;">
+                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" width="87" height="14" /> </a>
+					<div class="menu-toggler sidebar-toggler">
+						<span></span>
+					</div>
+				</div>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+				<!-- END RESPONSIVE MENU TOGGLER -->
+				<!-- BEGIN TOP NAVIGATION MENU -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">  </span>
+                        </a>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+						<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-quick-sidebar-toggler">
+							<a href="javascript:;" class="dropdown-toggle">
+                                <i class="icon-logout"></i>
+                            </a>
+						</li>
+						<!-- END QUICK SIDEBAR TOGGLER -->
+					</ul>
+				</div>
+				<!-- END TOP NAVIGATION MENU -->
+			</div>
+			<!-- END HEADER INNER -->
+		</div>
+		<!-- END HEADER -->
+		<!-- BEGIN HEADER & CONTENT DIVIDER -->
+		<div class="clearfix"></div>
+		<!-- END HEADER & CONTENT DIVIDER -->
+		<!-- BEGIN CONTAINER -->
+		<div class="page-container">
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar-wrapper">
+				<!-- BEGIN SIDEBAR -->
+				<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+				<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+				<div class="page-sidebar navbar-collapse collapse">
+					<!-- BEGIN SIDEBAR MENU -->
+					<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+					<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+					<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+					<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+					<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+					<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+						<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+						<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+						<!-- END SIDEBAR TOGGLER BUTTON -->
+						<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+						<li class="nav-item start active">
+							<a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-shangcheng" style="font-size: 20px;"></i>
+                                <span class="title">线上商城</span>
+                                <span class="arrow"></span>
+                            </a>
+							<ul class="sub-menu">
+								<li class="nav-item start ">
+									<a href="index.html" class="nav-link ">
+                                    <i class="iconfont icon-gaikuang" style="font-size: 20px;"></i>
+                                    <span class="title">销售概况</span>
+                                </a>
+								</li>
+								<li class="nav-item open">
+									<a href="shangpin.html" class="nav-link ">
+                                    <i class="iconfont icon-icon27401" style="font-size: 20px;"></i>
+                                    <span class="title">商品管理</span>
+                                    <span class="selected"></span>
+                                </a>
+								</li>
+								<li class="nav-item">
+									<a href="authServer.html" class="nav-link ">
+                                    <i class="iconfont icon-dingdan" style="font-size: 20px;"></i>
+                                    <span class="title">订单管理</span>
+                                </a>
+								</li>
+							</ul>
+						</li>W
+					</ul>
+					<!-- END SIDEBAR MENU -->
+				</div>
+				<!-- END SIDEBAR -->
+			</div>
+			<!-- END SIDEBAR -->
+			<!-- BEGIN CONTENT -->
+			<div class="page-content-wrapper">
+				<!-- BEGIN CONTENT BODY -->
+				<div class="page-content">
+					<!-- BEGIN PAGE HEADER-->
+					<!-- BEGIN PAGE BAR -->
+					<div class="page-bar">
+						<ul class="page-breadcrumb">
+							<li>
+								<!--<a href="javascript:;">管理首页</a>-->
+								<span>线上商城</span>
+								<i class="fa fa-circle"></i>
+							</li>
+							<li>
+								<span>商品管理</span>
+								<i class="fa fa-circle"></i>
+							</li>
+							<li>
+								<span>添加商品</span>
+							</li>
+						</ul>
+					</div>
+					<!-- END PAGE BAR -->
+					<!-- BEGIN PAGE TITLE-->
+					<h1 class="page-title">商品管理
+                        <small>添加商品</small>
+                    </h1>
+					<!-- END PAGE TITLE-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="portlet light bordered" id="myFormWizard">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-settings font-green"></i>
+										<span class="caption-subject font-green bold uppercase"> 快速添加向导
+										</span>
+									</div>
+								</div>
+								<div class="portlet-body form">
+									<form class="form-horizontal" action="#" method="POST">
+										<div class="form-wizard">
+											<div class="form-body">
+												<ul class="nav nav-pills nav-justified steps">
+													<li>
+														<a href="#tab1" data-toggle="tab" class="step">
+															<span class="number"> 1 </span>
+															<span class="desc"><i class="fa fa-check"></i> 商品种类 </span>
+                                                        </a>
+													</li>
+													<li>
+														<a href="#tab2" data-toggle="tab" class="step">
+                                                            <span class="number"> 2 </span>
+                                                            <span class="desc"><i class="fa fa-check"></i> 基本设置 </span>
+                                                        </a>
+													</li>
+													<li>
+														<a href="#tab3" data-toggle="tab" class="step active">
+                                                            <span class="number"> 3 </span>
+                                                            <span class="desc"><i class="fa fa-check"></i> 商品详情 </span>
+                                                        </a>
+													</li>
+												</ul>
+												<div id="bar" class="progress progress-striped" role="progressbar">
+													<div class="progress-bar progress-bar-success"> </div>
+												</div>
+												<div class="tab-content">
+													<div class="tab-pane active" id="tab1">
+														<!-- <h3 class="block">商品种类</h3> -->
+														<div class="form-group">
+															<label class="control-label col-md-3">
+																<span class="required">  </span>
+															</label>
+															<div class="col-md-9">
+																<div class="btn-group btn-group-devided form-control-static" data-toggle="buttons">
+																	<label class="btn btn-transparent red btn-outline btn-circle btn-lg active">
+																		<input type="radio" name="modeSelectAll" class="toggle" id="routerMode" checked="true"><i class="iconfont icon-menpiao" style="margin-right: 10px;font-size: 15px;"></i>景区门票</label>
+																</div>
+																<span class="help-block" id="modeExplain"> 商品种类一旦保存后将无法修改，请谨慎选择！ </span>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="tab2">
+														<!-- <h3 class="block">基本设置</h3> -->
+														<div class="form-group">
+															<label class="control-label col-md-3">商品分组
+																<!-- <span class="required"> * </span> -->
+															</label>
+															<div class="col-md-4">
+																<select id="goodsGroups" multiple="multiple">
+																</select>
+																<span class="help-block"> 未选择则添加到默认分组 </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">商品名称
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="phone" />
+																<span class="help-block"> 30个汉字以内 </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">销售价
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="phone" />
+																<span class="help-block"> 精确到小数点后两位 </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">原价
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="address" />
+																<span class="help-block"> 选填 </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">商品库存
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="city" value="0" />
+																<span class="help-block"> 正整数，0为不限库存 </span>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="tab3">
+														<!-- <h3 class="block">Provide your billing and credit card details</h3> -->
+														<div class="form-group">
+															<label class="control-label col-md-3">商品图片
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-9">
+																<div class="fileinput fileinput-new" data-provides="fileinput">
+																	<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+																		<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> </div>
+																	<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+																	<div>
+																		<span class="btn default btn-file">
+																			<span class="fileinput-new"> 选择图片 </span>
+																		<span class="fileinput-exists"> 更换图片 </span>
+																		<input type="file">
+																		</span>
+																		<a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> 删除图片 </a>
+																	</div>
+																</div>
+																<div class="clearfix margin-top-10">
+																	<span class="label label-danger">NOTE!</span> 建议尺寸为640像素*640像素，大小不超过500kb</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">Card Number
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="card_number" />
+																<span class="help-block"> </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">CVC
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" placeholder="" class="form-control" name="card_cvc" />
+																<span class="help-block"> </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">Expiration(MM/YYYY)
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" placeholder="MM/YYYY" maxlength="7" class="form-control" name="card_expiry_date" />
+																<span class="help-block"> e.g 11/2020 </span>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-3">Payment Options
+																<span class="required"> * </span>
+															</label>
+															<div class="col-md-4">
+																<div class="checkbox-list">
+																	<label>
+																		<input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card." /> Auto-Pay with this Credit Card </label>
+																	<label>
+																		<input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing." /> Email me monthly billing </label>
+																</div>
+																<div id="form_payment_error"> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<a href="javascript:;" class="btn default button-previous" style="margin-right: 20px;">
+                                                                <i class="fa fa-angle-left"></i> 上一步 </a>
+														<a href="javascript:;" class="btn btn-outline green button-next" style="margin-right: 20px;"> 下一步
+                                                                <i class="fa fa-angle-right"></i>
+                                                            </a>
+														<a href="javascript:;" class="btn green button-submit"> 立即保存
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END CONTENT BODY -->
+			</div>
+			<!-- END CONTENT -->
+			<!-- BEGIN QUICK SIDEBAR -->
+			<a href="javascript:;" class="page-quick-sidebar-toggler">
+            <i class="icon-login"></i>
+        </a>
+			<!-- END QUICK SIDEBAR -->
+		</div>
+		<!-- END CONTAINER -->
+	</div>
+	<!-- modal-dialog Begin -->
+	<!-- modal-dialog End -->
+	<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+	<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+	<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+	<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/tableExport.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/FileSaver.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/xlsx.core.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table-export.js"></script>
+	<script src="../assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-multiselect/js/bootstrap-multiselect.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myFormWizard').bootstrapWizard({
+			'nextSelector': '.button-next',
+			'previousSelector': '.button-previous',
+			onTabClick: function(tab, navigation, index, clickedIndex) {
+				return false;
+			},
+			onTabShow: function(tab, navigation, index) {
+				var total = navigation.find('li').length;
+				var current = index + 1;
+				var $percent = (current / total) * 100;
+				$('#myFormWizard').find('.progress-bar').css({
+					width: $percent + '%'
+				});
+			},
+			onNext: function(tab, navigation, index) {
+				handleTitle(tab, navigation, index);
+			},
+			onPrevious: function(tab, navigation, index) {
+				handleTitle(tab, navigation, index);
+			},
+		});
+		$('#myFormWizard').find('.button-previous').hide();
+		$('#myFormWizard').find('.button-submit').hide();
+
+		// 多选框
+		var multiData = [
+			{ label: '门票', value: '1-1', selected: false },
+			{ label: '推荐', value: '1-2', selected: false },
+			{ label: '热门', value: '1-3', selected: false },
+		];
+		$('#goodsGroups').multiselect({
+			buttonWidth: "300px",
+			// buttonClass: 'btn blue btn-outline',
+			enableClickableOptGroups: true,
+			enableCollapsibleOptGroups: true,
+			// disableIfEmpty: true,
+			nonSelectedText: '请选择分组',
+			numberDisplayed: 2,
+		});
+		$('#goodsGroups').multiselect('dataprovider', multiData);
+		$("label.checkbox").css("padding-left", "25px");
+
+		// 文件上传框
+	})
+
+	function handleTitle(tab, navigation, index) {
+		var total = navigation.find('li').length;
+		var current = index + 1;
+		// set wizard title
+		$('.step-title', $('#myFormWizard')).text('Step ' + (index + 1) + ' of ' + total);
+		// set done steps
+		jQuery('li', $('#myFormWizard')).removeClass("done");
+		var li_list = navigation.find('li');
+		for (var i = 0; i < index; i++) {
+			jQuery(li_list[i]).addClass("done");
+		}
+
+		if (current == 1) {
+			$('#myFormWizard').find('.button-previous').hide();
+		} else {
+			$('#myFormWizard').find('.button-previous').show();
+		}
+
+		if (current >= total) {
+			$('#myFormWizard').find('.button-next').hide();
+			$('#myFormWizard').find('.button-submit').show();
+		} else {
+			$('#myFormWizard').find('.button-next').show();
+			$('#myFormWizard').find('.button-submit').hide();
+		}
+		App.scrollTo($('.page-title'));
+	}
+	</script>
+</body>
+
+</html>

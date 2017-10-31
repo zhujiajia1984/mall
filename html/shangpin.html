@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hi游</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="../assets/global/plugins/iconfont/iconfont.css" type="text/css">
+	<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+	<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+	<link href="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-fixed">
+	<div class="page-wrapper">
+		<!-- BEGIN HEADER -->
+		<div class="page-header navbar navbar-fixed-top">
+			<!-- BEGIN HEADER INNER -->
+			<div class="page-header-inner ">
+				<!-- BEGIN LOGO -->
+				<div class="page-logo">
+					<a href="javascript:;">
+                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" width="87" height="14" /> </a>
+					<div class="menu-toggler sidebar-toggler">
+						<span></span>
+					</div>
+				</div>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+				<!-- END RESPONSIVE MENU TOGGLER -->
+				<!-- BEGIN TOP NAVIGATION MENU -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">  </span>
+                        </a>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+						<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-quick-sidebar-toggler">
+							<a href="javascript:;" class="dropdown-toggle">
+                                <i class="icon-logout"></i>
+                            </a>
+						</li>
+						<!-- END QUICK SIDEBAR TOGGLER -->
+					</ul>
+				</div>
+				<!-- END TOP NAVIGATION MENU -->
+			</div>
+			<!-- END HEADER INNER -->
+		</div>
+		<!-- END HEADER -->
+		<!-- BEGIN HEADER & CONTENT DIVIDER -->
+		<div class="clearfix"></div>
+		<!-- END HEADER & CONTENT DIVIDER -->
+		<!-- BEGIN CONTAINER -->
+		<div class="page-container">
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar-wrapper">
+				<!-- BEGIN SIDEBAR -->
+				<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+				<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+				<div class="page-sidebar navbar-collapse collapse">
+					<!-- BEGIN SIDEBAR MENU -->
+					<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+					<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+					<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+					<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+					<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+					<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+						<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+						<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+						<!-- END SIDEBAR TOGGLER BUTTON -->
+						<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+						<li class="nav-item start active">
+							<a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-shangcheng" style="font-size: 20px;"></i>
+                                <span class="title">线上商城</span>
+                                <span class="arrow"></span>
+                            </a>
+							<ul class="sub-menu">
+								<li class="nav-item start ">
+									<a href="index.html" class="nav-link ">
+                                    <i class="iconfont icon-gaikuang" style="font-size: 20px;"></i>
+                                    <span class="title">销售概况</span>
+                                </a>
+								</li>
+								<li class="nav-item open">
+									<a href="shangpin.html" class="nav-link ">
+                                    <i class="iconfont icon-icon27401" style="font-size: 20px;"></i>
+                                    <span class="title">商品管理</span>
+                                    <span class="selected"></span>
+                                </a>
+								</li>
+								<li class="nav-item">
+									<a href="authServer.html" class="nav-link ">
+                                    <i class="iconfont icon-dingdan" style="font-size: 20px;"></i>
+                                    <span class="title">订单管理</span>
+                                </a>
+								</li>
+							</ul>
+						</li>W
+					</ul>
+					<!-- END SIDEBAR MENU -->
+				</div>
+				<!-- END SIDEBAR -->
+			</div>
+			<!-- END SIDEBAR -->
+			<!-- BEGIN CONTENT -->
+			<div class="page-content-wrapper">
+				<!-- BEGIN CONTENT BODY -->
+				<div class="page-content">
+					<!-- BEGIN PAGE HEADER-->
+					<!-- BEGIN PAGE BAR -->
+					<div class="page-bar">
+						<ul class="page-breadcrumb">
+							<li>
+								<!--<a href="javascript:;">管理首页</a>-->
+								<span>线上商城</span>
+								<i class="fa fa-circle"></i>
+							</li>
+							<li>
+								<span>商品管理</span>
+							</li>
+						</ul>
+					</div>
+					<!-- END PAGE BAR -->
+					<!-- BEGIN PAGE TITLE-->
+					<h1 class="page-title">商品管理
+                        <small></small>
+                    </h1>
+					<!-- END PAGE TITLE-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="tabbable-line boxless tabbable-reversed">
+								<ul class="nav nav-tabs" id="mytab">
+									<li class="active"><a href="#tab1" data-toggle="tab">已上架商品</a></li>
+									<li><a href="#tab2" data-toggle="tab">未上架商品</a></li>
+									<li><a href="#tab3" data-toggle="tab">商品分组</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab1">
+										<div class="row" id="connectDev">
+											<div class="col-md-12 col-sm-12">
+												<!-- BEGIN EXAMPLE TABLE PORTLET-->
+												<div class="portlet light portlet-fit portlet-datatable bordered">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+															<span class="caption-subject font-blue sbold uppercase">商品列表</span>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<form class="form-inline" role="form" style="margin-bottom: 15px;">
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="商品名称">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devNameSearch">devNameSearch</label>
+																<input type="text" class="form-control" id="devNameSearch" placeholder="商品分组">
+															</div>
+															<div class="form-group">
+																<a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            					<i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        					</a>
+															</div>
+														</form>
+														<div class="btn-group" id="toolbar">
+															<a class="btn btn-circle blue" href="javascript:;" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="iconfont icon-gongneng"></i> 商品管理
+                                                                <i class="fa fa-angle-down"></i>
+                                                            </a>
+															<ul class="dropdown-menu">
+																<li>
+																	<a href="javascript:;" id="setDevsParam" name="addGoods">
+                                                					<i class="fa fa-plus" style="font-size: 14px"></i> 添加商品 </a>
+																</li>
+																<li>
+																	<a href="javascript:;" id="rebootBtn">
+                                                					<i class="fa fa-arrow-down" style="font-size: 14px"></i> 下架商品 </a>
+																</li>
+															</ul>
+														</div>
+														<table id="mytable"></table>
+													</div>
+												</div>
+												<!-- END EXAMPLE TABLE PORTLET-->
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab2">
+										<div class="clearfix"></div>
+										<div class="row" id="connectDev">
+											<div class="col-md-12 col-sm-12">
+												<!-- BEGIN EXAMPLE TABLE PORTLET-->
+												<div class="portlet light portlet-fit portlet-datatable bordered">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+															<span class="caption-subject font-blue sbold uppercase">商品列表</span>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<form class="form-inline" role="form" style="margin-bottom: 15px;">
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="商品名称">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devNameSearch">devNameSearch</label>
+																<input type="text" class="form-control" id="devNameSearch" placeholder="商品分组">
+															</div>
+															<div class="form-group">
+																<a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            					<i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        					</a>
+															</div>
+														</form>
+														<div class="btn-group" id="toolbar2">
+															<a class="btn btn-circle blue" href="javascript:;" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="iconfont icon-gongneng"></i> 商品管理
+                                                                <i class="fa fa-angle-down"></i>
+                                                            </a>
+															<ul class="dropdown-menu">
+																<li>
+																	<a href="javascript:;" id="setDevsParam" name="addGoods">
+                                                					<i class="fa fa-plus" style="font-size: 14px"></i> 添加商品 </a>
+																</li>
+																<li>
+																	<a href="javascript:;" id="rebootBtn">
+                                                					<i class="fa fa-arrow-up" style="font-size: 14px"></i> 上架商品 </a>
+																</li>
+															</ul>
+														</div>
+														<table id="mytable2"></table>
+													</div>
+												</div>
+												<!-- END EXAMPLE TABLE PORTLET-->
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab3">
+										<div class="clearfix"></div>
+										<div class="row" id="connectDev">
+											<div class="col-md-12 col-sm-12">
+												<!-- BEGIN EXAMPLE TABLE PORTLET-->
+												<div class="portlet light portlet-fit portlet-datatable bordered">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+															<span class="caption-subject font-blue sbold uppercase">分组列表</span>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<form class="form-inline" role="form" style="margin-bottom: 15px;">
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="分组名称">
+															</div>
+															<div class="form-group">
+																<a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            					<i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        					</a>
+															</div>
+														</form>
+														<div class="btn-group" id="toolbar3">
+															<a class="btn btn-circle blue" href="javascript:;" data-toggle="dropdown" aria-expanded="false" id="addGroup">
+                                            					<i class="fa fa-plus"></i> 新增分组
+                                       						</a>
+														</div>
+														<table id="mytable3"></table>
+													</div>
+												</div>
+												<!-- END EXAMPLE TABLE PORTLET-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END CONTENT BODY -->
+			</div>
+			<!-- END CONTENT -->
+			<!-- BEGIN QUICK SIDEBAR -->
+			<a href="javascript:;" class="page-quick-sidebar-toggler">
+            <i class="icon-login"></i>
+        </a>
+			<!-- END QUICK SIDEBAR -->
+		</div>
+		<!-- END CONTAINER -->
+	</div>
+	<!-- modal-dialog Begin -->
+	<div class="modal fade in" id="previewDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">商品详情预览（手机二维码）</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row" style="margin-left: 143px;">
+						<img src="https://www.weiquaninfo.cn/shangpin1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="rebootDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">商品下架</h4>
+				</div>
+				<div class="modal-body">
+					确认要下架已选中的商品吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+					</button>
+					<button type="button" id="rebootDev" class="btn green" data-dismiss="modal" id="setDevParamOk">立即下架
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="upDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">商品上架</h4>
+				</div>
+				<div class="modal-body">
+					确认要上架这件商品吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+					</button>
+					<button type="button" id="rebootDev" class="btn green" data-dismiss="modal" id="setDevParamOk">立即上架
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="delDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" id="delDlgTitle">删除商品</h4>
+				</div>
+				<div class="modal-body" id="delDlgContent">
+					确认要删除这件商品吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn green btn-outline" data-dismiss="modal">取消
+					</button>
+					<button type="button" class="btn red" data-dismiss="modal" id="setDevParamOk">立即删除
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="delGroupDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">删除分组</h4>
+				</div>
+				<div class="modal-body">
+					确认要删除分组吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn green btn-outline" data-dismiss="modal">取消
+					</button>
+					<button type="button" class="btn red" data-dismiss="modal" id="setDevParamOk">立即删除
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="addGroupDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" id="group-title">新增分组</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="form-horizontal form-row-seperated">
+								<div class="form-body">
+									<div class="form-group">
+										<label class="control-label col-md-3">分组名称</label>
+										<div class="col-md-6">
+											<input type="text" id="devNameInput" class="form-control" value="">
+											<span class="help-block"> 必填 </span>
+										</div>
+									</div>
+							</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn red btn-outline" data-dismiss="modal">取消
+						</button>
+						<button type="button" class="btn green" data-dismiss="modal" id="btnAddGroup">立即保存
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-dialog End -->
+	<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+	<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+	<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+	<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/tableExport.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/FileSaver.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/xlsx.core.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table-export.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		//////////////////////////////////////////////////////////////////
+		// 初始化已上架商品列表
+		$('#mytable').bootstrapTable({
+			pagination: true,
+			pageNumber: 1,
+			pageSize: 5,
+			pageList: [5, 10, 25, 50, 100],
+			striped: true,
+			toolbar: '#toolbar',
+			columns: [{
+				field: 'state',
+				align: 'center',
+				valign: 'middle',
+				checkbox: true,
+			}, {
+				field: 'name',
+				title: '商品名称',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				width: '150px',
+				visible: true,
+			}, {
+				field: 'group',
+				title: '商品分组',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'price',
+				title: '商品价格',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					return ("￥" + returnFloat(value));
+				},
+			}, {
+				field: 'stock',
+				title: '库存',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'allSales',
+				title: '总销量',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'upTime',
+				title: '上架时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'operate',
+				title: '操作',
+				align: 'center',
+				valign: 'middle',
+				sortable: false,
+				width: '250px',
+				formatter: function(value, row, index) {
+					var preview = '<a class="preview btn blue btn-circle btn-outline" style="margin-right: 10px" href="javascript:void(0)" >' + '<i class="fa fa-eye" style="margin-right: 5px;"></i>' + '预览' + '</a>';
+					var down = '<a class="down btn red btn-circle btn-outline"  href="javascript:void(0)" >' + '<i class="fa  fa-arrow-down" style="margin-right: 5px"></i>' + '下架' + '</a>';
+					return (preview + down);
+				},
+				events: 'operateEvents'
+			}],
+		});
+
+		//新增表格数据
+		var data = [];
+		for (var i = 0; i < 100; i++) {
+			data.push({
+				name: '测试' + RandomNumBoth(1, 100),
+				group: '门票',
+				price: RandomNumBoth(1, 1000).toString(),
+				stock: RandomNumBoth(1, 1000).toString(),
+				allSales: RandomNumBoth(1, 1000).toString(),
+				upTime: '2017/10/' + RandomNumBoth(1, 30) + ' 14:34:' + RandomNumBoth(10, 60),
+			})
+		}
+		$('#mytable').bootstrapTable('append', data);
+
+		// checkbox居中设置
+		$(".bs-checkbox").css({ 'vertical-align': 'middle' });
+		$('#mytable').on('all.bs.table', function() {
+			$(".bs-checkbox").css({ 'vertical-align': 'middle' });
+		});
+
+		//////////////////////////////////////////////////////////////////
+		// 批量下架
+		$("#rebootBtn").click(function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var rows = $('#mytable').bootstrapTable('getSelections');
+			if (rows.length == 0) {
+				swal({
+					title: "下架失败",
+					text: "请先选择需要下架的商品",
+					type: "error",
+					showConfirmButton: true,
+					confirmButtonClass: "btn-danger",
+					confirmButtonText: "确认",
+					showCancelButton: false,
+					closeOnConfirm: true
+				})
+			} else {
+				$("#rebootDlg").modal();
+			}
+		})
+
+		$('#mytable2').bootstrapTable({
+			pagination: true,
+			pageNumber: 1,
+			pageSize: 5,
+			pageList: [5, 10, 25, 50, 100],
+			striped: true,
+			toolbar: '#toolbar2',
+			columns: [{
+				field: 'state',
+				align: 'center',
+				valign: 'middle',
+				checkbox: true,
+			}, {
+				field: 'name',
+				title: '商品名称',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				width: '150px',
+				visible: true,
+			}, {
+				field: 'group',
+				title: '商品分组',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'price',
+				title: '商品价格',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					return ("￥" + returnFloat(value));
+				},
+			}, {
+				field: 'stock',
+				title: '库存',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'allSales',
+				title: '总销量',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'upTime',
+				title: '创建时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'operate',
+				title: '操作',
+				align: 'center',
+				valign: 'middle',
+				sortable: false,
+				width: '350px',
+				formatter: function(value, row, index) {
+					var up = '<a class="up btn blue btn-circle btn-outline" style="margin-right: 10px" href="javascript:void(0)" >' + '<i class="fa fa-arrow-up" style="margin-right: 5px;"></i>' + '上架' + '</a>';
+					var edit = '<a class="edit btn purple btn-circle btn-outline"  href="javascript:void(0)" style="margin-right: 10px">' + '<i class="fa fa-pencil" style="margin-right: 5px"></i>' + '编辑' + '</a>';
+					var del = '<a class="del btn red btn-circle btn-outline"  href="javascript:void(0)" >' + '<i class="fa fa-trash-o" style="margin-right: 5px"></i>' + '删除' + '</a>';
+					return (up + edit + del);
+				},
+				events: 'operateEvents'
+			}],
+		});
+		$('#mytable2').bootstrapTable('append', data);
+		$(".bs-checkbox").css({ 'vertical-align': 'middle' });
+		$('#mytable2').on('all.bs.table', function() {
+			$(".bs-checkbox").css({ 'vertical-align': 'middle' });
+		});
+
+		//
+		$('#mytable3').bootstrapTable({
+			pagination: true,
+			pageNumber: 1,
+			pageSize: 5,
+			pageList: [5, 10, 25, 50, 100],
+			striped: true,
+			toolbar: '#toolbar3',
+			columns: [{
+				field: 'name',
+				title: '分组名称',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				width: '150px',
+				visible: true,
+			}, {
+				field: 'group',
+				title: '已上架商品数',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'upTime',
+				title: '创建时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'operate',
+				title: '操作',
+				align: 'center',
+				valign: 'middle',
+				sortable: false,
+				width: '350px',
+				formatter: function(value, row, index) {
+					var edit = '<a class="editGroup btn purple btn-circle btn-outline"  href="javascript:void(0)" style="margin-right: 10px">' + '<i class="fa fa-pencil" style="margin-right: 5px"></i>' + '编辑' + '</a>';
+					var del = '<a class="delGroup btn red btn-circle btn-outline"  href="javascript:void(0)" >' + '<i class="fa fa-trash-o" style="margin-right: 5px"></i>' + '删除' + '</a>';
+					return (edit + del);
+				},
+				events: 'operateEvents'
+			}],
+		});
+		var data3 = [];
+		for (var i = 0; i < 10; i++) {
+			data3.push({
+				name: '分组' + RandomNumBoth(1, 100),
+				group: RandomNumBoth(1, 10).toString(),
+				upTime: '2017/10/' + RandomNumBoth(1, 30) + ' 14:34:' + RandomNumBoth(10, 60),
+			})
+		}
+		$('#mytable3').bootstrapTable('append', data3);
+		//
+		$("#addGroup").click(function(e) {
+			$("#group-title").text("新增分组");
+			$("#addGroupDlg").modal();
+		})
+
+		$('a[name = "addGoods"]').click(function(e) {
+			window.location.href = "./goodsDetail.html";
+		})
+	})
+
+	// 配置
+	window.operateEvents = {
+		'click .preview': function(e, value, row, index) {
+			e.preventDefault();
+			$("#previewDlg").modal();
+		},
+		'click .down': function(e, value, row, index) {
+			e.preventDefault();
+			$("#rebootDlg").modal();
+		},
+		'click .up': function(e, value, row, index) {
+			e.preventDefault();
+			$("#upDlg").modal();
+		},
+		'click .del': function(e, value, row, index) {
+			e.preventDefault();
+			$("#delDlg").modal();
+		},
+		'click .editGroup': function(e, value, row, index) {
+			e.preventDefault();
+			$("#group-title").text("编辑分组");
+			$("#addGroupDlg").modal();
+		},
+		'click .delGroup': function(e, value, row, index) {
+			e.preventDefault();
+			$("#delGroupDlg").modal();
+		},
+	}
+
+	// 生成范围随机数
+	function RandomNumBoth(Min, Max) {
+		var Range = Max - Min;
+		var Rand = Math.random();
+		var num = Min + Math.round(Rand * Range); //四舍五入
+		return num.toString();
+	}
+	// 生成小数（保留2位）
+	function returnFloat(value) {
+		var value = Math.round(parseFloat(value) * 100) / 100;
+		var xsd = value.toString().split(".");
+		if (xsd.length == 1) {
+			value = value.toString() + ".00";
+			return value;
+		}
+		if (xsd.length > 1) {
+			if (xsd[1].length < 2) {
+				value = value.toString() + "0";
+			}
+			return value;
+		}
+	}
+	</script>
+</body>
+
+</html>
