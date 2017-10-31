@@ -22,6 +22,7 @@
 	<link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" type="text/css" rel="stylesheet">
 	<link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" type="text/css" rel="stylesheet">
 	<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/bootstrap-table-reorder-rows.css" type="text/css" rel="stylesheet">
 </head>
 <!-- END HEAD -->
 
@@ -101,12 +102,12 @@
                                 <span class="arrow"></span>
                             </a>
 							<ul class="sub-menu">
-								<li class="nav-item start ">
+								<!-- <li class="nav-item start ">
 									<a href="index.html" class="nav-link ">
                                     <i class="iconfont icon-gaikuang" style="font-size: 20px;"></i>
                                     <span class="title">销售概况</span>
                                 </a>
-								</li>
+								</li> -->
 								<li class="nav-item open">
 									<a href="shangpin.html" class="nav-link ">
                                     <i class="iconfont icon-icon27401" style="font-size: 20px;"></i>
@@ -115,7 +116,7 @@
                                 </a>
 								</li>
 								<li class="nav-item">
-									<a href="authServer.html" class="nav-link ">
+									<a href="order.html" class="nav-link ">
                                     <i class="iconfont icon-dingdan" style="font-size: 20px;"></i>
                                     <span class="title">订单管理</span>
                                 </a>
@@ -170,6 +171,7 @@
 														<div class="caption">
 															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
 															<span class="caption-subject font-blue sbold uppercase">商品列表</span>
+															<span class="caption-helper">拖动表格即可改变商品的展现顺序</span>
 														</div>
 													</div>
 													<div class="portlet-body">
@@ -250,7 +252,7 @@
                                                 					<i class="fa fa-plus" style="font-size: 14px"></i> 添加商品 </a>
 																</li>
 																<li>
-																	<a href="javascript:;" id="rebootBtn">
+																	<a href="javascript:;" id="upGoods">
                                                 					<i class="fa fa-arrow-up" style="font-size: 14px"></i> 上架商品 </a>
 																</li>
 															</ul>
@@ -343,7 +345,7 @@
 				<div class="modal-footer">
 					<button type="button" class="btn red btn-outline" data-dismiss="modal">取消
 					</button>
-					<button type="button" id="rebootDev" class="btn green" data-dismiss="modal" id="setDevParamOk">立即下架
+					<button type="button" class="btn green" data-dismiss="modal" id="btnDownList">立即下架
 					</button>
 				</div>
 			</div>
@@ -362,7 +364,7 @@
 				<div class="modal-footer">
 					<button type="button" class="btn red btn-outline" data-dismiss="modal">取消
 					</button>
-					<button type="button" id="rebootDev" class="btn green" data-dismiss="modal" id="setDevParamOk">立即上架
+					<button type="button" class="btn green" data-dismiss="modal" id="btnUpList">立即上架
 					</button>
 				</div>
 			</div>
@@ -462,17 +464,21 @@
 	<script src="../assets/global/plugins/tableExport-jquery-plugin/FileSaver.min.js"></script>
 	<script src="../assets/global/plugins/tableExport-jquery-plugin/xlsx.core.min.js"></script>
 	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table-export.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/jquery.tablednd.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		//////////////////////////////////////////////////////////////////
 		// 初始化已上架商品列表
 		$('#mytable').bootstrapTable({
 			pagination: true,
+			reorderableRows: true,
 			pageNumber: 1,
 			pageSize: 5,
 			pageList: [5, 10, 25, 50, 100],
 			striped: true,
 			toolbar: '#toolbar',
+			showColumns: true,
 			columns: [{
 				field: 'state',
 				align: 'center',
@@ -492,7 +498,7 @@
 				align: 'center',
 				valign: 'middle',
 				sortable: true,
-				visible: true,
+				visible: false,
 			}, {
 				field: 'price',
 				title: '商品价格',
@@ -545,7 +551,7 @@
 		for (var i = 0; i < 100; i++) {
 			data.push({
 				name: '测试' + RandomNumBoth(1, 100),
-				group: '门票',
+				group: '门票，' + '热门',
 				price: RandomNumBoth(1, 1000).toString(),
 				stock: RandomNumBoth(1, 1000).toString(),
 				allSales: RandomNumBoth(1, 1000).toString(),
@@ -561,10 +567,10 @@
 		});
 
 		//////////////////////////////////////////////////////////////////
-		// 批量下架
+		// 批量上下架
 		$("#rebootBtn").click(function(event) {
 			event.preventDefault();
-			event.stopPropagation();
+			// event.stopPropagation();
 			var rows = $('#mytable').bootstrapTable('getSelections');
 			if (rows.length == 0) {
 				swal({
@@ -581,6 +587,25 @@
 				$("#rebootDlg").modal();
 			}
 		})
+		$("#upGoods").click(function(event) {
+			event.preventDefault();
+			// event.stopPropagation();
+			var rows = $('#mytable2').bootstrapTable('getSelections');
+			if (rows.length == 0) {
+				swal({
+					title: "上架失败",
+					text: "请先选择需要上架的商品",
+					type: "error",
+					showConfirmButton: true,
+					confirmButtonClass: "btn-danger",
+					confirmButtonText: "确认",
+					showCancelButton: false,
+					closeOnConfirm: true
+				})
+			} else {
+				$("#upDlg").modal();
+			}
+		})
 
 		$('#mytable2').bootstrapTable({
 			pagination: true,
@@ -589,6 +614,7 @@
 			pageList: [5, 10, 25, 50, 100],
 			striped: true,
 			toolbar: '#toolbar2',
+			showColumns: true,
 			columns: [{
 				field: 'state',
 				align: 'center',
@@ -608,7 +634,7 @@
 				align: 'center',
 				valign: 'middle',
 				sortable: true,
-				visible: true,
+				visible: false,
 			}, {
 				field: 'price',
 				title: '商品价格',
@@ -721,9 +747,54 @@
 			$("#group-title").text("新增分组");
 			$("#addGroupDlg").modal();
 		})
-
 		$('a[name = "addGoods"]').click(function(e) {
 			window.location.href = "./goodsDetail.html";
+		})
+		$("#btnDownList").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			App.blockUI({
+				target: $("#rebootDlg"),
+				boxed: true,
+				message: '商品下架中...',
+				zIndex: 20000,
+			});
+			window.setTimeout(function() {
+				$("#rebootDlg").modal('hide');
+				App.unblockUI('#rebootDlg');
+				App.alert({
+					place: 'append',
+					type: 'success',
+					message: '商品下架成功',
+					close: true,
+					reset: true,
+					focus: true,
+					closeInSeconds: '5',
+				});
+			}, 3000);
+		})
+		$("#btnUpList").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			App.blockUI({
+				target: $("#upDlg"),
+				boxed: true,
+				message: '商品上架中...',
+				zIndex: 20000,
+			});
+			window.setTimeout(function() {
+				$("#upDlg").modal('hide');
+				App.unblockUI('#upDlg');
+				App.alert({
+					place: 'append',
+					type: 'success',
+					message: '商品上架成功',
+					close: true,
+					reset: true,
+					focus: true,
+					closeInSeconds: '5',
+				});
+			}, 3000);
 		})
 	})
 
@@ -740,6 +811,10 @@
 		'click .up': function(e, value, row, index) {
 			e.preventDefault();
 			$("#upDlg").modal();
+		},
+		'click .edit': function(e, value, row, index) {
+			e.preventDefault();
+			window.location.href = "./goodsDetail.html";
 		},
 		'click .del': function(e, value, row, index) {
 			e.preventDefault();

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hi游</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="../assets/global/plugins/iconfont/iconfont.css" type="text/css">
+	<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+	<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+	<link href="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" type="text/css" rel="stylesheet">
+	<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/bootstrap-table-reorder-rows.css" type="text/css" rel="stylesheet">
+	<style>
+	.label-success {
+		background-color: #26C281;
+	}
+	</style>
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-fixed">
+	<div class="page-wrapper">
+		<!-- BEGIN HEADER -->
+		<div class="page-header navbar navbar-fixed-top">
+			<!-- BEGIN HEADER INNER -->
+			<div class="page-header-inner ">
+				<!-- BEGIN LOGO -->
+				<div class="page-logo">
+					<a href="javascript:;">
+                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" width="87" height="14" /> </a>
+					<div class="menu-toggler sidebar-toggler">
+						<span></span>
+					</div>
+				</div>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+				<!-- END RESPONSIVE MENU TOGGLER -->
+				<!-- BEGIN TOP NAVIGATION MENU -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">  </span>
+                        </a>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+						<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+						<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+						<li class="dropdown dropdown-quick-sidebar-toggler">
+							<a href="javascript:;" class="dropdown-toggle">
+                                <i class="icon-logout"></i>
+                            </a>
+						</li>
+						<!-- END QUICK SIDEBAR TOGGLER -->
+					</ul>
+				</div>
+				<!-- END TOP NAVIGATION MENU -->
+			</div>
+			<!-- END HEADER INNER -->
+		</div>
+		<!-- END HEADER -->
+		<!-- BEGIN HEADER & CONTENT DIVIDER -->
+		<div class="clearfix"></div>
+		<!-- END HEADER & CONTENT DIVIDER -->
+		<!-- BEGIN CONTAINER -->
+		<div class="page-container">
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar-wrapper">
+				<!-- BEGIN SIDEBAR -->
+				<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+				<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+				<div class="page-sidebar navbar-collapse collapse">
+					<!-- BEGIN SIDEBAR MENU -->
+					<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+					<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+					<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+					<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+					<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+					<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+						<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+						<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+						<!-- END SIDEBAR TOGGLER BUTTON -->
+						<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+						<li class="nav-item start active">
+							<a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="iconfont icon-shangcheng" style="font-size: 20px;"></i>
+                                <span class="title">线上商城</span>
+                                <span class="arrow"></span>
+                            </a>
+							<ul class="sub-menu">
+								<!-- <li class="nav-item start ">
+									<a href="index.html" class="nav-link ">
+                                    <i class="iconfont icon-gaikuang" style="font-size: 20px;"></i>
+                                    <span class="title">销售概况</span>
+                                </a>
+								</li> -->
+								<li class="nav-item">
+									<a href="shangpin.html" class="nav-link ">
+                                    <i class="iconfont icon-icon27401" style="font-size: 20px;"></i>
+                                    <span class="title">商品管理</span>
+                                </a>
+								</li>
+								<li class="nav-item open">
+									<a href="order.html" class="nav-link ">
+                                    <i class="fa fa-file-text-o" style="font-size: 20px;"></i>
+                                    <span class="title">订单管理</span>
+                                    <span class="selected"></span>
+                                </a>
+								</li>
+							</ul>
+						</li>W
+					</ul>
+					<!-- END SIDEBAR MENU -->
+				</div>
+				<!-- END SIDEBAR -->
+			</div>
+			<!-- END SIDEBAR -->
+			<!-- BEGIN CONTENT -->
+			<div class="page-content-wrapper">
+				<!-- BEGIN CONTENT BODY -->
+				<div class="page-content">
+					<!-- BEGIN PAGE HEADER-->
+					<!-- BEGIN PAGE BAR -->
+					<div class="page-bar">
+						<ul class="page-breadcrumb">
+							<li>
+								<!--<a href="javascript:;">管理首页</a>-->
+								<span>线上商城</span>
+								<i class="fa fa-circle"></i>
+							</li>
+							<li>
+								<span>订单管理</span>
+							</li>
+						</ul>
+					</div>
+					<!-- END PAGE BAR -->
+					<!-- BEGIN PAGE TITLE-->
+					<h1 class="page-title">订单管理
+                        <small></small>
+                    </h1>
+					<!-- END PAGE TITLE-->
+					<!-- start BODY -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="tabbable-line boxless tabbable-reversed">
+								<ul class="nav nav-tabs" id="mytab">
+									<li class="active"><a href="#tab1" data-toggle="tab">交易订单查询</a></li>
+									<li><a href="#tab2" data-toggle="tab" id="backTab">退款订单查询</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab1">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<!-- BEGIN EXAMPLE TABLE PORTLET-->
+												<div class="portlet light portlet-fit portlet-datatable bordered">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+															<span class="caption-subject font-blue sbold uppercase">交易订单</span>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<form class="form-inline" role="form" style="margin-bottom: 15px;" id="toolbar">
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="订单号">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="支付方式">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="交易状态">
+															</div>
+															<label for="dateTimeSel">交易时间</label>
+															<div class="form-group" style="position: relative;">
+																<i class="glyphicon glyphicon-calendar fa fa-calendar" style="position: absolute;bottom: 10px; right: 190px; top: auto; cursor: pointer;"></i>
+																<input type="text" id="dateTimeSel" class="form-control" style="width: 220px;padding-left: 35px;">
+															</div>
+															<a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            					<i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        					</a>
+														</form>
+														<table id="mytable1"></table>
+													</div>
+												</div>
+												<!-- END EXAMPLE TABLE PORTLET-->
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab2">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<!-- BEGIN EXAMPLE TABLE PORTLET-->
+												<div class="portlet light portlet-fit portlet-datatable bordered">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="iconfont icon-liebiao" style="font-size: 17px;color:rgb(53,152,220);"></i>
+															<span class="caption-subject font-blue sbold uppercase">退款订单</span>
+														</div>
+													</div>
+													<div class="portlet-body">
+														<form class="form-inline" role="form" style="margin-bottom: 15px;" id="toolbar2">
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="交易订单号">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="退款订单号">
+															</div>
+															<div class="form-group">
+																<label class="sr-only" for="devMacSearch">mac</label>
+																<input type="text" class="form-control" id="devMacSearch" placeholder="退款状态">
+															</div>
+															<div class="form-group" style="position: relative;">
+																<i class="glyphicon glyphicon-calendar fa fa-calendar" style="position: absolute;bottom: 10px; right: 190px; top: auto; cursor: pointer;"></i>
+																<input type="text" id="dateTimeSel2" class="form-control" style="width: 220px;padding-left: 35px;">
+															</div>
+															<a href="javascript:;" class="btn btn-circle green" id="searchBegin">
+                                            					<i class="fa fa-search" style="margin-right: 5px;"></i>查询 
+                                        					</a>
+														</form>
+														<table id="mytable2"></table>
+													</div>
+												</div>
+												<!-- END EXAMPLE TABLE PORTLET-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end BODY -->
+				</div>
+				<!-- END CONTENT BODY -->
+			</div>
+			<!-- END CONTENT -->
+			<!-- BEGIN QUICK SIDEBAR -->
+			<a href="javascript:;" class="page-quick-sidebar-toggler">
+            <i class="icon-login"></i>
+        </a>
+			<!-- END QUICK SIDEBAR -->
+		</div>
+		<!-- END CONTAINER -->
+	</div>
+	<!-- modal-dialog Begin -->
+	<div class="modal fade in" id="backMoneyDlg" tabindex="-1" role="basic" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">申请退款</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="form-horizontal form-row-seperated">
+								<div class="form-body">
+									<div class="form-group">
+										<label class="control-label col-md-3">订单可退金额：</label>
+										<div class="col-md-6">
+											<p class="form-control-static" data-display="username">234.00</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">退款金额(元)</label>
+										<div class="col-md-6">
+											<input type="text" id="devNameInput" class="form-control" value="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">退款原因</label>
+										<div class="col-md-6">
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+							</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn green btn-outline" data-dismiss="modal">取消
+						</button>
+						<button type="button" class="btn red" data-dismiss="modal" id="btnBackOk">立即退款
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-dialog End -->
+	<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+	<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+	<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+	<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/tableExport.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/FileSaver.min.js"></script>
+	<script src="../assets/global/plugins/tableExport-jquery-plugin/xlsx.core.min.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/bootstrap-table-export.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/jquery.tablednd.js"></script>
+	<script src="../assets/global/plugins/bootstrap-table-master/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		// 初始化已上架商品列表
+		$('#mytable1').bootstrapTable({
+			pagination: true,
+			toolbar: '#toolbar',
+			showColumns: true,
+			pageNumber: 1,
+			pageSize: 5,
+			pageList: [5, 10, 25, 50, 100],
+			striped: true,
+			showExport: true,
+			exportDataType: 'all',
+			exportTypes: ['excel', 'txt'],
+			exportOptions: {
+				excelFileFormat: ['xlsx', 'txt']
+			},
+			detailView: true,
+			detailFormatter: function(index, row, element) {
+				var result = '<form class="form-horizontal form-row-seperated" role="form">';
+				result += '<div class="form-body">';
+				result += '<div class="row">';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">商品名称：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 成人票 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">商品数量：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 3 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">总金额：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 176.00元 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '<div class="row">';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">商品名称：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 成人票 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">商品数量：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 3 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '<div class="col-md-4">';
+				result += '<div class="form-group">';
+				result += '<label class="control-label col-md-3">总金额：</label>';
+				result += '<div class="col-md-9">';
+				result += '<p class="form-control-static"> 176.00元 </p>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '</div>';
+				result += '</form>';
+				return result;
+			},
+			columns: [{
+				field: 'orderTime',
+				title: '交易时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				width: '200px',
+				visible: true,
+			}, {
+				field: 'orderNum',
+				title: '订单号',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'payType',
+				title: '支付方式',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'payStatus',
+				title: '交易状态',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					switch (value) {
+						case "已支付":
+							return ('<span class="label label-info">' + value + '</span>');
+						case "已使用":
+							return ('<span class="label label-success">' + value + '</span>');
+						case "退款异常":
+							return ('<span class="label label-danger">' + value + '</span>');
+						default:
+							return ('<span class="label label-default">' + value + '</span>');
+					}
+				},
+			}, {
+				field: 'useTime',
+				title: '使用时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: false,
+				formatter: function(value, row, index) {
+					if (row.payStatus == "已使用")
+						return '2017-10-31 15:43:' + RandomNumBoth(10, 59).toString();
+				}
+			}, {
+				field: 'payMoney',
+				title: '订单金额',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					return ("￥" + returnFloat(value));
+				},
+			}, {
+				field: 'operate',
+				title: '操作',
+				align: 'center',
+				valign: 'middle',
+				sortable: false,
+				width: '250px',
+				formatter: function(value, row, index) {
+					var back = '<a class="back btn red btn-circle btn-outline" style="margin-right: 10px" href="javascript:void(0)" >' + '<i class="fa fa-arrow-left" style="margin-right: 5px;"></i>' + '申请退款' + '</a>';
+					var info = '<a class="info btn blue btn-circle btn-outline"  href="javascript:void(0)" >' + '<i class="fa fa-search" style="margin-right: 5px"></i>' + '退款单' + '</a>';
+					switch (row.payStatus) {
+						case "已支付":
+							return back;
+						case "已使用":
+							return value;
+						default:
+							return info;
+					}
+				},
+				events: 'operateEvents'
+			}],
+		});
+
+		//新增表格数据
+		var status = ['已支付', '已使用', '已退款成功', '退款异常', '退款中']
+		var data1 = [];
+		for (var i = 0; i < 100; i++) {
+			data1.push({
+				orderTime: '2017-10-31 15:23:' + RandomNumBoth(10, 59).toString(),
+				orderNum: moment().subtract(RandomNumBoth(10, 59), 'seconds').format("YYYYMMDDHHmmssSSS"),
+				payType: '微信支付',
+				payStatus: status[i % 5],
+				payMoney: RandomNumBoth(100, 900).toString(),
+			})
+		}
+		$('#mytable1').bootstrapTable('append', data1);
+
+		// 交易时间
+		var dateOptions = {
+			startDate: moment().subtract(6, 'days'),
+			endDate: moment(),
+			maxDate: moment(),
+			dateLimit: {
+				"days": 30
+			},
+			ranges: {
+				'今天': [moment(), moment()],
+				'昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+				'最近7天': [moment().subtract(6, 'days'), moment()],
+				'最近30天': [moment().subtract(29, 'days'), moment()],
+				'本月': [moment().startOf('month'), moment().endOf('month')],
+				'上月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+			},
+			locale: {
+				format: "YYYY/MM/DD",
+				applyLabel: '保存',
+				cancelLabel: '取消',
+				fromLabel: 'From',
+				toLabel: 'To',
+				customRangeLabel: '自定义',
+				daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+				monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+				firstDay: 1
+			}
+		}
+		$('#dateTimeSel').daterangepicker(
+			dateOptions,
+			function(start, end, label) {
+				// alert("ok");
+			})
+		$('#dateTimeSel2').daterangepicker(
+			dateOptions,
+			function(start, end, label) {
+				// alert("ok");
+			})
+
+		// 退款
+		$("#btnBackOk").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			App.blockUI({
+				target: $("#backMoneyDlg"),
+				boxed: true,
+				message: '退款中...',
+				zIndex: 20000,
+			});
+			window.setTimeout(function() {
+				$("#backMoneyDlg").modal('hide');
+				App.unblockUI('#backMoneyDlg');
+				App.alert({
+					place: 'append',
+					type: 'success',
+					message: '已成功下发退款指令',
+					close: true,
+					reset: true,
+					focus: true,
+					closeInSeconds: '5',
+				});
+			}, 2000);
+		})
+
+		// 初始化已上架商品列表
+		$('#mytable2').bootstrapTable({
+			pagination: true,
+			toolbar: '#toolbar2',
+			pageNumber: 1,
+			pageSize: 5,
+			pageList: [5, 10, 25, 50, 100],
+			striped: true,
+			showExport: true,
+			showColumns: true,
+			exportDataType: 'all',
+			exportTypes: ['excel', 'txt'],
+			exportOptions: {
+				excelFileFormat: ['xlsx', 'txt']
+			},
+			columns: [{
+				field: 'backNum',
+				title: '退款订单号',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'backMoney',
+				title: '退款金额',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					return ("￥" + returnFloat(value));
+				},
+			}, {
+				field: 'backStatus',
+				title: '退款状态',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+				formatter: function(value, row, index) {
+					switch (value) {
+						case "退款异常":
+							return ('<span class="label label-danger">' + value + '</span>');
+						case "已退款成功":
+							return ('<span class="label label-success">' + value + '</span>');
+						default:
+							return ('<span class="label label-info">' + value + '</span>');
+					}
+				},
+			}, {
+				field: 'orderTime',
+				title: '提交时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				width: '200px',
+				visible: true,
+			}, {
+				field: 'orderNum',
+				title: '交易订单号',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, {
+				field: 'backSuccessTime',
+				title: '退款完成时间',
+				align: 'center',
+				valign: 'middle',
+				sortable: true,
+				visible: true,
+			}, ],
+		});
+
+		//新增表格数据
+		var status2 = ['已退款成功', '退款异常', '退款中']
+		var data2 = [];
+		for (var i = 0; i < 100; i++) {
+			data2.push({
+				backNum: 'back' + moment().subtract(RandomNumBoth(10, 59), 'seconds').format("YYYYMMDDHHmmssSSS"),
+				backMoney: RandomNumBoth(100, 900).toString(),
+				backStatus: status2[i % 3],
+				orderTime: '2017-10-31 15:23:' + RandomNumBoth(10, 59).toString(),
+				orderNum: moment().subtract(RandomNumBoth(10, 59), 'seconds').format("YYYYMMDDHHmmssSSS"),
+				backSuccessTime: '2017-10-31 15:33:' + RandomNumBoth(10, 59).toString(),
+			})
+		}
+		$('#mytable2').bootstrapTable('append', data2);
+	})
+	// 操作
+	window.operateEvents = {
+		'click .back': function(e, value, row, index) {
+			e.preventDefault();
+			$("#backMoneyDlg").modal();
+		},
+		'click .info': function(e, value, row, index) {
+			e.preventDefault();
+			$('#backTab').tab('show');
+		}
+	}
+	// 生成范围随机数
+	function RandomNumBoth(Min, Max) {
+		var Range = Max - Min;
+		var Rand = Math.random();
+		var num = Min + Math.round(Rand * Range); //四舍五入
+		return num;
+	}
+	// 生成小数（保留2位）
+	function returnFloat(value) {
+		var value = Math.round(parseFloat(value) * 100) / 100;
+		var xsd = value.toString().split(".");
+		if (xsd.length == 1) {
+			value = value.toString() + ".00";
+			return value;
+		}
+		if (xsd.length > 1) {
+			if (xsd[1].length < 2) {
+				value = value.toString() + "0";
+			}
+			return value;
+		}
+	}
+	</script>
+</body>
+
+</html>
