@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"date",
+				"dateTimeSel"
+			],
+			[
+				"show",
+				"showColumns"
+			],
+			[
+				"backN",
+				"backMoney"
+			],
+			[
+				"back",
+				"backMoneyDlg"
+			],
+			[
+				"col",
+				"col-md-12"
+			],
+			[
+				"href",
+				"href=\"javascript"
+			],
+			[
+				"loa",
+				"location"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"gr",
+				"group-title"
+			],
+			[
+				"add",
+				"addGroupDlg"
+			],
+			[
+				"Ran",
+				"RandomNumBoth〔function〕"
+			],
+			[
 				"len",
 				"length"
 			],
@@ -14,10 +70,6 @@
 			[
 				"ssids",
 				"ssidNames"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"black",
@@ -34,10 +86,6 @@
 			[
 				"char",
 				"chartType"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"set",
@@ -64,16 +112,8 @@
 				"hasClass〔function〕"
 			],
 			[
-				"add",
-				"addClass〔function〕"
-			],
-			[
 				"font",
 				"font-size"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"cloud",
@@ -183,6 +223,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "html/order.html",
+			"settings":
+			{
+				"buffer_size": 27036,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "html/index.html",
+			"settings":
+			{
+				"buffer_size": 10163,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "html/shangpin.html",
+			"settings":
+			{
+				"buffer_size": 32321,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -293,11 +360,21 @@
 	"expanded_folders":
 	[
 		"/D/Project/web/mall",
-		"/D/Project/web/mall/assets",
 		"/D/Project/web/mall/html"
 	],
 	"file_history":
 	[
+		"/D/Project/web/mall/html/goodsDetail.html",
+		"/D/Project/web/mall/html/shangpin.html",
+		"/D/Project/web/mall/html/index.html",
+		"/D/Project/web/mall/html/order.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js",
+		"/C/Users/zjj/Desktop/jquery.tablednd.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/components-editors.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/components_editors.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/components_bootstrap_fileinput.html",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/assets/pages/scripts/form-wizard.js",
+		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/form_wizard.html",
 		"/D/Project/web/frameMini2/html_mini/scanWifi.html",
 		"/D/Project/web/frameMini2/html_mini/vlan.html",
 		"/C/Users/zjj/Desktop/metronic_v4.7.5/theme/admin_1/components_bootstrap_multiselect_dropdown.html",
@@ -414,18 +491,7 @@
 		"/D/androidStudio/projects/MyApplication/build.gradle",
 		"/D/androidStudio/projects/MyApplication/gradle/wrapper/gradle-wrapper.properties",
 		"/D/androidStudio/projects/MyApplication/gradle.properties",
-		"/D/androidStudio/projects/test/gradle/wrapper/gradle-wrapper.properties",
-		"/D/React/reactJs/src/ParamsExample.js",
-		"/D/React/reactJs/package.json",
-		"/D/React/reactJs/webpack.config.js",
-		"/D/React/reactJs/src/BasicExample.js",
-		"/D/React/reactJs/public/components/About.js",
-		"/D/React/reactJs/public/components/Topics.js",
-		"/D/React/reactJs/src/App.js",
-		"/D/React/reactJs/public/App.js",
-		"/D/React/reactJs/public/index.html",
-		"/D/React/reactJs/src/App2.js",
-		"/C/Users/zjj/Desktop/oui.txt"
+		"/D/androidStudio/projects/test/gradle/wrapper/gradle-wrapper.properties"
 	],
 	"find":
 	{
@@ -447,6 +513,74 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dateTimeSel2",
+			"myTab",
+			"orderNum",
+			"toolbar",
+			"click",
+			"operateEvents",
+			"operateEvents3",
+			"退款",
+			"returnFloat",
+			"mytable",
+			"上架商品",
+			"btnDownList",
+			"rebootDlg",
+			"down",
+			"editGroup",
+			"group",
+			"商品分组",
+			"summernote_1",
+			"note-editing-area",
+			"type=\"file\"",
+			"imageMajor",
+			"goodsGroups",
+			"button-submit",
+			"blue",
+			"page-title",
+			"form_wizard_1",
+			"done",
+			"button-submit",
+			"progress-bar",
+			"button-next",
+			"navigation",
+			"success",
+			"myFormWizard",
+			"tab1",
+			"form-wizard",
+			"button-previous",
+			".button-previous",
+			".button-next",
+			"col-md-4 bg-blue mt-step-col active",
+			"green",
+			"step111",
+			"open",
+			"delDlg",
+			"addGroupDlg",
+			"关联商品数",
+			"toolbar",
+			"toolbar2",
+			"toolbar",
+			"mytable2",
+			"rebootDlg",
+			"previewDlg",
+			"getLength",
+			"preview",
+			"previewDlg",
+			"preview",
+			"devName",
+			"operateEvents",
+			"stock",
+			"rand",
+			"stock",
+			"ran",
+			"mytable",
+			"rebootDev",
+			"setDevParamOk",
+			"setDevParamOk2",
+			"setDevParamOk",
+			"rebootDlg",
+			"rebootBtn",
 			"mytable",
 			"addBlackList",
 			"operateEvents",
@@ -506,75 +640,7 @@
 			"停止",
 			"options",
 			"change",
-			"data",
-			"dat",
-			"data",
-			"free.png",
-			"setChart1",
-			"自动扫描",
-			"autoSearch",
-			"state",
-			"switchCtl",
-			"maxConSwitch",
-			"cookie",
-			"scanWifi",
-			"工具",
-			"vlan.html",
-			"getUrlParam",
-			"window.location",
-			"工具",
-			"保存",
-			"nav",
-			"navTabs",
-			"tab_0",
-			"liTab_0",
-			"tab_0",
-			"apModeContent",
-			"透明桥",
-			"apmode",
-			"cookie",
-			"apMode",
-			"modeExplain",
-			"apMode",
-			"AP模式",
-			"routerMode",
-			"modeSelectAll",
-			"已连接终端",
-			"navTabs",
-			"2.4G",
-			"最优距离",
-			"最优",
-			"vlan",
-			"switchCtl",
-			"cutstr",
-			"datatable",
-			"cookie",
-			"trahs",
-			"switchCtl",
-			"operateEvents",
-			"a:first",
-			"tab",
-			"max",
-			"maxConSwitch",
-			"外网设置",
-			"网络设置",
-			"cloudAddressGroup",
-			"已连接",
-			"新增SSID",
-			"devModeSel",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader",
-			"badge badge-default",
-			"iconHeader"
+			"data"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -582,6 +648,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"myFormWizard",
 			"vlan.html",
 			"取消"
 		],
@@ -594,14 +661,111 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "html/order.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22544,
+								22544
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"is_init_dirty_state": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 19694.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5914,
+								5914
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2331.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "html/shangpin.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6015,
+								6015
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10730.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 45.0
 	},
 	"input":
 	{
@@ -638,7 +802,7 @@
 	"project": "mall.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 86.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -676,7 +840,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 304.0,
+	"side_bar_width": 284.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

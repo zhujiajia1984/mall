@@ -233,6 +233,7 @@
 																<label class="sr-only" for="devMacSearch">mac</label>
 																<input type="text" class="form-control" id="devMacSearch" placeholder="退款状态">
 															</div>
+															<label for="dateTimeSel">提交时间</label>
 															<div class="form-group" style="position: relative;">
 																<i class="glyphicon glyphicon-calendar fa fa-calendar" style="position: absolute;bottom: 10px; right: 190px; top: auto; cursor: pointer;"></i>
 																<input type="text" id="dateTimeSel2" class="form-control" style="width: 220px;padding-left: 35px;">
@@ -387,7 +388,7 @@
 				result += '<div class="form-group">';
 				result += '<label class="control-label col-md-3">商品名称：</label>';
 				result += '<div class="col-md-9">';
-				result += '<p class="form-control-static"> 成人票 </p>';
+				result += '<p class="form-control-static"> 儿童票 </p>';
 				result += '</div>';
 				result += '</div>';
 				result += '</div>';
@@ -520,6 +521,7 @@
 				"days": 30
 			},
 			ranges: {
+				// '全部': ['all', 'all'],
 				'今天': [moment(), moment()],
 				'昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
 				'最近7天': [moment().subtract(6, 'days'), moment()],
@@ -541,9 +543,7 @@
 		}
 		$('#dateTimeSel').daterangepicker(
 			dateOptions,
-			function(start, end, label) {
-				// alert("ok");
-			})
+			function(start, end, label) {})
 		$('#dateTimeSel2').daterangepicker(
 			dateOptions,
 			function(start, end, label) {
